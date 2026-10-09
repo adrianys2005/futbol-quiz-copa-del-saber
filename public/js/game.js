@@ -245,25 +245,27 @@
   // --- 1. LOAD TEAMS & PLAYERS ---
   async function loadTeams() {
     try {
-      const res = await fetch('/api/teams');
-      state.teams = await res.json();
-      if (state.teams.length > 0) {
-        state.selectedTeam = state.teams[0]; // Default Colombia
-        state.selectedPlayer = state.selectedTeam.players[0];
+      let res = await fetch('/api/teams');
+      if (res.ok) {
+        state.teams = await res.json();
+      } else {
+        // Fallback estático en Netlify / GitHub Pages
+        const staticRes = await fetch('data/teams.json');
+        state.teams = await staticRes.json();
       }
     } catch (err) {
-      console.error('Error fetching teams:', err);
-      // Fallback
-      state.teams = [
-        {
-          id: 'colombia',
-          name: 'Colombia',
-          code: 'CO',
-          flag: '🇨🇴',
-          players: [{ name: 'James Rodríguez', number: 10, role: 'Centrocampista', avatar: '⭐' }]
-        }
-      ];
-      state.selectedTeam = state.teams[0];
+      console.warn('API endpoint not reachable, fetching static data/teams.json:', err);
+      try {
+        const staticRes = await fetch('data/teams.json');
+        state.teams = await staticRes.json();
+      } catch (staticErr) {
+        console.error('Error fetching static teams:', staticErr);
+        state.teams = [];
+      }
+    }
+
+    if (state.teams && state.teams.length > 0) {
+      state.selectedTeam = state.teams[0]; // Default Colombia
       state.selectedPlayer = state.selectedTeam.players[0];
     }
   }
@@ -1185,6 +1187,38 @@
   // Anti-repetition session pool
   window._recentQuestionIds = window._recentQuestionIds || new Set();
 
+  // Filtro de preguntas en el cliente (para Netlify, GitHub Pages y hosting estático)
+  function filterQuestionsLocally(allQ, grado, asignatura) {
+    let pool = allQ;
+    if (asignatura && asignatura !== 'todas') {
+      const tSubj = (asignatura || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      pool = pool.filter(q => {
+        const qSubj = (q.asignatura || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        if (qSubj === tSubj) return true;
+        if ((tSubj.includes('lenguaje') || tSubj.includes('lectura')) && (qSubj.includes('lenguaje') || qSubj.includes('lectura'))) return true;
+        if ((tSubj.includes('sociales') || tSubj.includes('ciudadan')) && (qSubj.includes('sociales') || qSubj.includes('ciudadan'))) return true;
+        if (tSubj.includes('naturales') && (qSubj.includes('naturales') || qSubj.includes('ambiental') || qSubj.includes('biologia'))) return true;
+        if (tSubj.includes('matematica') && qSubj.includes('matematica')) return true;
+        if (tSubj.includes('ingles') && qSubj.includes('ingles')) return true;
+        return false;
+      });
+    }
+    if (!grado || grado === 'todos') return pool.length > 0 ? pool : allQ;
+    const targetGrade = parseInt(grado, 10);
+    let matches = pool.filter(q => String(q.grado) === String(grado));
+    if (matches.length < 8) {
+      const existing = new Set(matches.map(q => q.id));
+      const candidates = pool.filter(q => !existing.has(q.id)).sort((a, b) => {
+        return Math.abs((parseInt(a.grado, 10) || targetGrade) - targetGrade) - Math.abs((parseInt(b.grado, 10) || targetGrade) - targetGrade);
+      });
+      for (const cand of candidates) {
+        if (matches.length >= 15) break;
+        matches.push(cand);
+      }
+    }
+    return matches.length > 0 ? matches : allQ;
+  }
+
   // Fetch Questions for Solo Match
   async function loadQuestionsForSolo() {
     let url = `/api/questions?grado=${state.selectedGrade}`;
@@ -1192,13 +1226,23 @@
       url += `&asignatura=${encodeURIComponent(state.selectedSubject)}`;
     }
     try {
-      const res = await fetch(url);
-      let data = await res.json();
-      if (!Array.isArray(data) || data.length === 0) {
-        // Fallback: load all for grade
-        const fallbackRes = await fetch(`/api/questions?grado=${state.selectedGrade}`);
-        data = await fallbackRes.json();
+      let data = [];
+      try {
+        const res = await fetch(url);
+        if (res.ok) {
+          data = await res.json();
+        }
+      } catch (apiErr) {
+        // En Netlify / hosting estático no hay endpoint /api
       }
+
+      if (!Array.isArray(data) || data.length === 0) {
+        // Fallback a archivo JSON estático en public/data/questions.json
+        const staticRes = await fetch('data/questions.json');
+        const allQ = await staticRes.json();
+        data = filterQuestionsLocally(allQ, state.selectedGrade, state.selectedSubject);
+      }
+
       if (!Array.isArray(data) || data.length === 0) {
         return [];
       }

@@ -1,0 +1,2501 @@
+[
+  {
+    "id": "MAT-11-FAC-01",
+    "grado": "11",
+    "asignatura": "Matemáticas",
+    "tema": "Porcentajes y descuentos",
+    "pregunta": "Un balón oficial cuesta $100.000 y tiene un descuento del 20%. ¿Cuánto pagará el comprador por el balón?",
+    "opciones": [
+      "$ 20.000",
+      "$ 70.000",
+      "$ 80.000",
+      "$ 90.000"
+    ],
+    "correcta": 2,
+    "explicacion": "El 20% de 100.000 es 20.000. Restando el descuento: 100.000 - 20.000 = $80.000.",
+    "dificultad": "Difícil",
+    "fuente": "Fundamentos Saber 11° Matemáticas"
+  },
+  {
+    "id": "MAT-11-FAC-02",
+    "grado": "11",
+    "asignatura": "Matemáticas",
+    "tema": "Áreas y geometría básica",
+    "pregunta": "¿Cuál es el área de una cancha rectangular que mide 10 metros de ancho por 20 metros de largo?",
+    "opciones": [
+      "30 m²",
+      "60 m²",
+      "200 m²",
+      "400 m²"
+    ],
+    "correcta": 2,
+    "explicacion": "El área de un rectángulo es base × altura: 20 m × 10 m = 200 m².",
+    "dificultad": "Difícil",
+    "fuente": "Fundamentos Saber 11° Matemáticas"
+  },
+  {
+    "id": "MAT-11-FAC-03",
+    "grado": "11",
+    "asignatura": "Matemáticas",
+    "tema": "Probabilidad simple",
+    "pregunta": "Al lanzar una moneda al aire antes de iniciar el partido, ¿cuál es la probabilidad de que caiga cara?",
+    "opciones": [
+      "1/4 (25%)",
+      "1/2 (50%)",
+      "1/3 (33%)",
+      "1/1 (100%)"
+    ],
+    "correcta": 1,
+    "explicacion": "Hay 1 caso favorable (cara) entre 2 casos posibles (cara o sello), por tanto es 1/2 = 50%.",
+    "dificultad": "Difícil",
+    "fuente": "Fundamentos Saber 11° Matemáticas"
+  },
+  {
+    "id": "MAT-11-FAC-04",
+    "grado": "11",
+    "asignatura": "Matemáticas",
+    "tema": "Operaciones con fracciones",
+    "pregunta": "En un partido se han jugado 45 minutos de los 90 reglamentarios. ¿Qué fracción del tiempo total se ha jugado?",
+    "opciones": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "3/4"
+    ],
+    "correcta": 2,
+    "explicacion": "45 / 90 = 1/2, es decir exactamente la mitad del partido.",
+    "dificultad": "Difícil",
+    "fuente": "Fundamentos Saber 11° Matemáticas"
+  },
+  {
+    "id": "MAT-11-FAC-05",
+    "grado": "11",
+    "asignatura": "Matemáticas",
+    "tema": "Promedios simples",
+    "pregunta": "Un delantero anotó 2 goles en el primer partido, 4 en el segundo y 0 en el tercero. ¿Cuál es su promedio de goles por partido?",
+    "opciones": [
+      "1 gol",
+      "2 goles",
+      "3 goles",
+      "6 goles"
+    ],
+    "correcta": 1,
+    "explicacion": "Promedio = (2 + 4 + 0) ÷ 3 = 6 ÷ 3 = 2 goles por partido.",
+    "dificultad": "Difícil",
+    "fuente": "Fundamentos Saber 11° Matemáticas"
+  },
+  {
+    "id": "LEN-11-FAC-01",
+    "grado": "11",
+    "asignatura": "Lenguaje",
+    "tema": "Sinónimos contextuales",
+    "pregunta": "En la frase: 'El guardameta tuvo una actuación formidable durante la final', la palabra 'formidable' puede sustituirse sin cambiar el sentido por:",
+    "opciones": [
+      "Pésima",
+      "Grandiosa",
+      "Común",
+      "Peligrosa"
+    ],
+    "correcta": 1,
+    "explicacion": "'Formidable' en este contexto significa magnífica, excelente o grandiosa.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Lectura Crítica"
+  },
+  {
+    "id": "LEN-11-FAC-02",
+    "grado": "11",
+    "asignatura": "Lenguaje",
+    "tema": "Conectores lógicos de causa",
+    "pregunta": "¿Cuál de los siguientes conectores indica la causa de un hecho?",
+    "opciones": [
+      "Sin embargo",
+      "Porque",
+      "Por el contrario",
+      "Finalmente"
+    ],
+    "correcta": 1,
+    "explicacion": "'Porque' es una conjunción causal que introduce la razón o motivo de una acción.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Lectura Crítica"
+  },
+  {
+    "id": "LEN-11-FAC-03",
+    "grado": "11",
+    "asignatura": "Lenguaje",
+    "tema": "Tipología textual",
+    "pregunta": "Un texto que expone opiniones fundamentadas para convencer al lector sobre una tesis se clasifica como:",
+    "opciones": [
+      "Instructivo",
+      "Descriptivo",
+      "Argumentativo",
+      "Lírico"
+    ],
+    "correcta": 2,
+    "explicacion": "El texto argumentativo tiene como propósito principal convencer o persuadir al receptor mediante argumentos razonados.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Lectura Crítica"
+  },
+  {
+    "id": "LEN-11-FAC-04",
+    "grado": "11",
+    "asignatura": "Lenguaje",
+    "tema": "Intención comunicativa",
+    "pregunta": "Un afiche que dice: '¡Usa el cinturón de seguridad, salva tu vida!', tiene como función principal:",
+    "opciones": [
+      "Contar una historia de ficción",
+      "Persuadir y prevenir al ciudadano",
+      "Entretener con humor",
+      "Explicar una fórmula matemática"
+    ],
+    "correcta": 1,
+    "explicacion": "Los afiches de seguridad vial buscan persuadir y concientizar a la población para prevenir accidentes.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Lectura Crítica"
+  },
+  {
+    "id": "CN-11-FAC-01",
+    "grado": "11",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Física - Movimiento y velocidad",
+    "pregunta": "Si un jugador corre 100 metros en 10 segundos con velocidad constante, ¿cuál es su rapidez?",
+    "opciones": [
+      "5 m/s",
+      "10 m/s",
+      "50 m/s",
+      "100 m/s"
+    ],
+    "correcta": 1,
+    "explicacion": "Rapidez = Distancia ÷ Tiempo = 100 m ÷ 10 s = 10 m/s.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Ciencias Naturales"
+  },
+  {
+    "id": "CN-11-FAC-02",
+    "grado": "11",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Biología - Fotosíntesis",
+    "pregunta": "¿Cuál es el principal gas que absorben las plantas de la atmósfera para realizar la fotosíntesis?",
+    "opciones": [
+      "Oxígeno (O₂)",
+      "Dióxido de carbono (CO₂)",
+      "Nitrógeno (N₂)",
+      "Monóxido de carbono (CO)"
+    ],
+    "correcta": 1,
+    "explicacion": "Las plantas toman dióxido de carbono (CO₂) y agua en presencia de luz solar para producir glucosa y liberar oxígeno.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Ciencias Naturales"
+  },
+  {
+    "id": "CN-11-FAC-03",
+    "grado": "11",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Química - Estados de la materia",
+    "pregunta": "El paso directo del estado líquido al gaseoso debido al aumento de temperatura se conoce como:",
+    "opciones": [
+      "Condensación",
+      "Solidificación",
+      "Evaporación / Ebullición",
+      "Sublimación"
+    ],
+    "correcta": 2,
+    "explicacion": "La evaporación o ebullición es el cambio físico de líquido a gas.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Ciencias Naturales"
+  },
+  {
+    "id": "CN-11-FAC-04",
+    "grado": "11",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Física - Conservación de la energía",
+    "pregunta": "¿Qué establece el principio fundamental de conservación de la energía?",
+    "opciones": [
+      "La energía se crea espontáneamente de la nada.",
+      "La energía no se crea ni se destruye, solo se transforma.",
+      "La energía siempre desaparece al final de un movimiento.",
+      "La energía potencial nunca puede convertirse en energía cinética."
+    ],
+    "correcta": 1,
+    "explicacion": "La Primera Ley de la Termodinámica afirma que la energía total de un sistema aislado permanece constante: no se crea ni se destruye, solo cambia de forma.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Ciencias Naturales"
+  },
+  {
+    "id": "SOC-11-FAC-01",
+    "grado": "11",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Constitución de 1991 y Derechos",
+    "pregunta": "En Colombia, ¿cuál es el mecanismo constitucional creado en 1991 que protege de forma rápida los derechos fundamentales de las personas?",
+    "opciones": [
+      "La acción de tutela",
+      "El referendo",
+      "El juicio político",
+      "La moción de censura"
+    ],
+    "correcta": 0,
+    "explicacion": "La Acción de Tutela (Artículo 86 de la Constitución de 1991) permite a cualquier ciudadano solicitar la protección inmediata de sus derechos fundamentales ante los jueces.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Competencias Ciudadanas"
+  },
+  {
+    "id": "SOC-11-FAC-02",
+    "grado": "11",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Ramas del Poder Público",
+    "pregunta": "¿Qué rama del poder público en Colombia se encarga de crear y reformar las leyes a través del Congreso de la República?",
+    "opciones": [
+      "Rama Ejecutiva",
+      "Rama Legislativa",
+      "Rama Judicial",
+      "Rama Electoral"
+    ],
+    "correcta": 1,
+    "explicacion": "La Rama Legislativa está conformada por el Congreso (Senado y Cámara de Representantes) y tiene la función de legislar.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Ciencias Sociales"
+  },
+  {
+    "id": "SOC-11-FAC-03",
+    "grado": "11",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Mecanismos de participación",
+    "pregunta": "El mecanismo mediante el cual el pueblo vota para elegir al Presidente, alcaldes o concejales se denomina:",
+    "opciones": [
+      "El sufragio / Voto popular",
+      "El cabildo abierto",
+      "La huelga",
+      "La revocatoria"
+    ],
+    "correcta": 0,
+    "explicacion": "El voto o sufragio universal es el derecho y deber ciudadano fundamental para elegir a los gobernantes en una democracia.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Ciencias Sociales"
+  },
+  {
+    "id": "SOC-11-FAC-04",
+    "grado": "11",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Geografía de Colombia",
+    "pregunta": "¿Por cuántos océanos está rodeado el territorio de la República de Colombia?",
+    "opciones": [
+      "Ninguno (es país mediterráneo)",
+      "Uno solo (Océano Atlántico)",
+      "Dos océanos (Atlántico y Pacífico)",
+      "Tres océanos"
+    ],
+    "correcta": 2,
+    "explicacion": "Colombia es el único país de Sudamérica con costas en dos océanos: el Mar Caribe (Océano Atlántico) y el Océano Pacífico.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Ciencias Sociales"
+  },
+  {
+    "id": "ING-11-FAC-01",
+    "grado": "11",
+    "asignatura": "Inglés",
+    "tema": "Everyday greetings and polite responses",
+    "pregunta": "Complete the conversation: - 'Good luck in today's soccer match!' - '_________________'",
+    "opciones": [
+      "You are welcome",
+      "Thanks, I will do my best!",
+      "I'm 17 years old",
+      "It is raining outside"
+    ],
+    "correcta": 1,
+    "explicacion": "The natural response when wished good luck is 'Thanks, I will do my best!'",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Inglés"
+  },
+  {
+    "id": "ING-11-FAC-02",
+    "grado": "11",
+    "asignatura": "Inglés",
+    "tema": "Prepositions of place",
+    "pregunta": "Where is the soccer ball? 'The ball is _______ the grass in the center of the field.'",
+    "opciones": [
+      "on",
+      "under",
+      "between",
+      "behind"
+    ],
+    "correcta": 0,
+    "explicacion": "'On' is used for objects resting on a surface like 'on the grass'.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Inglés"
+  },
+  {
+    "id": "ING-11-FAC-03",
+    "grado": "11",
+    "asignatura": "Inglés",
+    "tema": "Sports and school vocabulary",
+    "pregunta": "Which word corresponds to the person who protects the goal in a soccer match?",
+    "opciones": [
+      "Referee",
+      "Goalkeeper",
+      "Coach",
+      "Fan"
+    ],
+    "correcta": 1,
+    "explicacion": "The 'goalkeeper' (portero / arquero) is the player whose role is preventing the ball from entering the goal.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Inglés"
+  },
+  {
+    "id": "ING-11-FAC-04",
+    "grado": "11",
+    "asignatura": "Inglés",
+    "tema": "Present Simple vs Past",
+    "pregunta": "Choose the correct past form: 'Yesterday, our team _______ the championship match 3 to 1.'",
+    "opciones": [
+      "win",
+      "won",
+      "winning",
+      "wins"
+    ],
+    "correcta": 1,
+    "explicacion": "The past simple of the irregular verb 'win' is 'won'.",
+    "dificultad": "Difícil",
+    "fuente": "Saber 11° Inglés"
+  },
+  {
+    "id": "MAT-11-ICFES-01",
+    "grado": "11",
+    "asignatura": "Matemáticas",
+    "tema": "Estadística y análisis de promedios",
+    "pregunta": "Cuatro cursos, cada uno con igual número de estudiantes, presentan anualmente una prueba de matemáticas. Los promedios obtenidos por curso fueron:\n- Curso I: Año anterior = 63, Año actual = 65\n- Curso II: Año anterior = 61, Año actual = 45\n- Curso III: Año anterior = 50, Año actual = 53\n- Curso IV: Año anterior = 53, Año actual = 54\nUna persona afirma que hubo un aumento en el puntaje general respecto al año anterior. ¿Esta afirmación es correcta?",
+    "opciones": [
+      "Correcta, ya que el promedio de la mayoría de los cursos aumentó respecto al año anterior.",
+      "Incorrecta, ya que el promedio total en el año anterior (56,75) es superior al actual (54,25).",
+      "Correcta, porque el curso I tuvo un incremento notable.",
+      "Incorrecta, porque en el curso II el puntaje no varió."
+    ],
+    "correcta": 1,
+    "explicacion": "Al tener cada curso igual número de estudiantes, el promedio global es la media de los promedios: Año anterior = (63+61+50+53)/4 = 56.75. Año actual = (65+45+53+54)/4 = 54.25. El promedio total disminuyó, por lo que la afirmación es incorrecta.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Matemáticas"
+  },
+  {
+    "id": "MAT-11-ICFES-02",
+    "grado": "11",
+    "asignatura": "Matemáticas",
+    "tema": "Razonamiento cuantitativo y tasas de cambio",
+    "pregunta": "Una persona en Colombia tiene inversiones en dólares en EE.UU. Sabe que la tasa de cambio del dólar respecto al peso se mantendrá constante este mes (1 USD = 4.000 COP) y que su inversión en dólares le dará ganancias del 3% en ese periodo. Un amigo le asegura que en pesos sus ganancias también serán del 3%. ¿La afirmación de su amigo es correcta?",
+    "opciones": [
+      "No, porque las ganancias en pesos dependen de que la tasa de cambio aumente.",
+      "No, porque debería conocerse el monto exacto en dólares invertido.",
+      "Sí, porque al mantenerse constante la tasa de cambio, la proporción en que aumenta la inversión en dólares es la misma que en pesos.",
+      "Sí, porque el 3% en dólares siempre equivale a más dinero que en pesos colombianos."
+    ],
+    "correcta": 2,
+    "explicacion": "Si la tasa de cambio T es constante, el valor en pesos es V_cop = V_usd × T. Un incremento del 3% en dólares resulta en 1.03 × V_usd × T = 1.03 × V_cop, lo que representa exactamente una ganancia del 3% en pesos.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Matemáticas"
+  },
+  {
+    "id": "MAT-11-ICFES-03",
+    "grado": "11",
+    "asignatura": "Matemáticas",
+    "tema": "Optimización y costos",
+    "pregunta": "Las directivas de un colegio organizan un viaje a un museo con 140 estudiantes en 3 grupos (máximos y precios por franja: Franja 1 [8:00-10:00]: máx 50 est, $35.000; Franja 2 [10:00-12:00]: máx 40 est, $40.000; Franja 3 [12:00-14:00]: máx 30 est, $50.000; Franja 4 [14:00-16:00]: máx 60 est, $45.000). Para que el costo total de entradas sea el menor posible llenando las franjas más económicas, ¿cuáles 3 franjas deben escogerse?",
+    "opciones": [
+      "Franjas 1, 2 y 3.",
+      "Franjas 1, 2 y 4.",
+      "Franjas 2, 3 y 4.",
+      "Franjas 1, 3 y 4."
+    ],
+    "correcta": 1,
+    "explicacion": "Se necesitan 140 estudiantes en 3 grupos. Las franjas 1 (50 est a $35k) y 2 (40 est a $40k) suman 90 estudiantes económicos. La franja 4 aporta hasta 60 est a $45k (50+40+50 = 140 estudiantes), evitando la franja 3 que es la más costosa ($50k). Por lo tanto, la combinación óptima es 1, 2 y 4.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Matemáticas"
+  },
+  {
+    "id": "MAT-11-ICFES-04",
+    "grado": "11",
+    "asignatura": "Matemáticas",
+    "tema": "Funciones y proporcionalidad",
+    "pregunta": "Una empresa paga $4.200.000 por capacitar a los trabajadores de la dependencia 'Insumos' en el módulo I (cuyo costo es de $60.000 por trabajador). ¿Cuántos empleados tiene esta dependencia?",
+    "opciones": [
+      "Entre 20 y 30 trabajadores.",
+      "Entre 41 y 60 trabajadores.",
+      "Entre 61 y 90 trabajadores (exactamente 70).",
+      "Entre 80 y 120 trabajadores."
+    ],
+    "correcta": 2,
+    "explicacion": "Dividiendo el costo total pagado entre el costo individual: $4.200.000 ÷ $60.000 = 70 empleados. 70 se encuentra en el rango de 61 a 90 trabajadores.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Matemáticas"
+  },
+  {
+    "id": "MAT-11-ICFES-05",
+    "grado": "11",
+    "asignatura": "Matemáticas",
+    "tema": "Aritmética financiera y repartición proporcional",
+    "pregunta": "Si la capacitación del módulo II tiene un valor total de $1.800.000 y se cobra equitativamente entre los 50 trabajadores de la dependencia 'Recursos Humanos', ¿cuánto deberá pagar cada uno?",
+    "opciones": [
+      "$ 18.000",
+      "$ 36.000",
+      "$ 45.000",
+      "$ 90.000"
+    ],
+    "correcta": 1,
+    "explicacion": "Cálculo directo de división equitativa: $1.800.000 ÷ 50 = $36.000 por trabajador.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Matemáticas"
+  },
+  {
+    "id": "MAT-11-ICFES-07",
+    "grado": "11",
+    "asignatura": "Matemáticas",
+    "tema": "Geometría analítica y áreas",
+    "pregunta": "Un portalápices tiene base cuadrada de 18 cm de perímetro y boca cuadrada de 24 cm de perímetro. Un estudiante afirma: 'Como la razón de los perímetros es 18/24 = 3/4, el área de la base debe ser tres cuartas partes (3/4) del área de la boca'. Esta afirmación es:",
+    "opciones": [
+      "Correcta, porque el área y el perímetro siempre varían de forma directamente proporcional lineal.",
+      "Incorrecta, porque la razón de las áreas de figuras semejantes es igual al cuadrado de la razón de sus lados ( (3/4)² = 9/16 ).",
+      "Correcta, porque ambas figuras son cuadradas de igual número de lados.",
+      "Incorrecta, porque el área se calcula sumando los cuatro lados."
+    ],
+    "correcta": 1,
+    "explicacion": "En figuras semejantes bidimensionales, la razón entre sus áreas es igual al cuadrado de la razón de semejanza lineal r: Área_base / Área_boca = (3/4)² = 9/16 ≈ 0.5625, no 3/4 (0.75).",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Matemáticas"
+  },
+  {
+    "id": "MAT-11-ICFES-13",
+    "grado": "11",
+    "asignatura": "Matemáticas",
+    "tema": "Interpretación de datos y capacidad",
+    "pregunta": "Durante enero, un comerciante vendió 100 toneladas de mango y 50 de banano (150 toneladas en total). Si para transportarlas utiliza camiones con capacidad máxima de 5 toneladas cada uno, ¿cuál de los siguientes datos se puede determinar con certeza?",
+    "opciones": [
+      "La ganancia neta exacta de los productores agrícolas.",
+      "El pago individual que recibirá cada conductor en el mes.",
+      "El costo total de combustible del comerciante.",
+      "El número mínimo de viajes de camión que se realizaron (150 ÷ 5 = 30 viajes)."
+    ],
+    "correcta": 3,
+    "explicacion": "Conocido el tonelaje total (150 toneladas) y la capacidad máxima de cada camión (5 toneladas), se puede determinar que se requirieron como mínimo 150 / 5 = 30 viajes.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Matemáticas"
+  },
+  {
+    "id": "LEN-11-ICFES-01",
+    "grado": "11",
+    "asignatura": "Lenguaje",
+    "tema": "Semántica y relaciones léxicas",
+    "pregunta": "En un texto narrativo se utiliza la palabra 'famélico' para describir a un personaje ('Johnny parecía un espectro famélico en medio de la niebla'). ¿Cuál de los siguientes adjetivos le da un sentido opuesto o antonímico al significado que tiene esta palabra en el texto?",
+    "opciones": [
+      "Magro.",
+      "Enjuto.",
+      "Relleno o saciado.",
+      "Esquelético."
+    ],
+    "correcta": 2,
+    "explicacion": "'Famélico' significa hambriento, extremadamente delgado o desnutrido. 'Magro', 'enjuto' y 'esquelético' son sinónimos. El antónimo directo es 'relleno', 'robusto' o 'saciado'.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Lectura Crítica"
+  },
+  {
+    "id": "LEN-11-ICFES-02",
+    "grado": "11",
+    "asignatura": "Lenguaje",
+    "tema": "Articulación y sentido global del texto",
+    "pregunta": "En un ensayo filosófico sobre el conocimiento, el autor plantea que 'la duda metódica no destruye las certezas, sino que las purifica al someterlas al crisol de la razón'. La función principal de esta afirmación dentro del argumento es:",
+    "opciones": [
+      "Criticar a la ciencia por carecer de verdades inmutables.",
+      "Sugerir que ningún conocimiento humano puede ser confiable.",
+      "Negar la importancia de la lógica formal en el pensamiento moderno.",
+      "Defender el papel constructivo del escepticismo como método de validación epistemológica."
+    ],
+    "correcta": 3,
+    "explicacion": "El autor enfatiza que dudar metódicamente no busca la destrucción del saber sino su consolidación ('purifica certezas'), defendiendo la duda constructiva como herramienta de validación filosófica.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Lectura Crítica"
+  },
+  {
+    "id": "LEN-11-ICFES-03",
+    "grado": "11",
+    "asignatura": "Lenguaje",
+    "tema": "Contenidos locales e inferencia",
+    "pregunta": "Considere el siguiente fragmento: 'No hay peor tiranía que la que se ejerce a la sombra de las leyes y bajo el calor de la justicia'. Con esta expresión, el autor infiere que:",
+    "opciones": [
+      "El abuso del poder es más perverso e indefendible cuando se disfraza bajo la aparente legalidad institucional.",
+      "Las leyes siempre promueven la opresión de los ciudadanos.",
+      "Los jueces nunca deben interpretar las normas jurídicas.",
+      "La anarquía es preferible a cualquier orden constitucional."
+    ],
+    "correcta": 0,
+    "explicacion": "La cita clásica de Montesquieu señala que la opresión más grave ocurre cuando quienes tienen el poder utilizan los propios mecanismos de la ley y los tribunales para someter a los ciudadanos, anulando las vías de defensa legítimas.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Lectura Crítica"
+  },
+  {
+    "id": "LEN-11-ICFES-04",
+    "grado": "11",
+    "asignatura": "Lenguaje",
+    "tema": "Tipologías textuales y conectores",
+    "pregunta": "¿Cuál es la función del conector subrayado en la siguiente oración: 'El proyecto demostró viabilidad financiera; por consiguiente, el comité aprobó su ejecución inmediata'?",
+    "opciones": [
+      "Establecer una oposición o restricción temática.",
+      "Indicar una relación de causa-consecuencia lógica entre las proposiciones.",
+      "Introducir una digresión narrativa secundaria.",
+      "Formular una condición indispensable."
+    ],
+    "correcta": 1,
+    "explicacion": "'Por consiguiente' es un conector consecutivo que introduce el efecto o resultado directo de la premisa previa.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Lectura Crítica"
+  },
+  {
+    "id": "CN-11-ICFES-02",
+    "grado": "11",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Química - Reacciones y estequiometría",
+    "pregunta": "La siguiente ecuación química representa la formación de agua líquida:\n2 H₂(g) + O₂(g) → 2 H₂O(l)\n¿Cuál de las siguientes opciones identifica correctamente los reactivos de dicha reacción química?",
+    "opciones": [
+      "H₄ y O₂.",
+      "H₄ y O₄.",
+      "H₂ (gas dihidrógeno) y O₂ (gas dioxígeno).",
+      "H₂ y O₄."
+    ],
+    "correcta": 2,
+    "explicacion": "En la ecuación química, las especies moleculares que reaccionan (a la izquierda de la flecha) son el gas hidrógeno molecular (H₂) y el gas oxígeno molecular (O₂).",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Ciencias Naturales"
+  },
+  {
+    "id": "CN-11-ICFES-04",
+    "grado": "11",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Física y Química - Densidad y estados de la materia",
+    "pregunta": "Un bloque de hielo seco (CO₂ sólido) se sublima pasando directamente del estado sólido al gaseoso en condiciones ambientales estándar. Teniendo en cuenta la definición de densidad (d = m / V), ¿por qué disminuye notablemente la densidad del CO₂ tras el cambio de estado?",
+    "opciones": [
+      "Porque la masa del CO₂ se destruye al evaporarse.",
+      "Porque la distancia intermolecular y el volumen ocupado aumentan considerablemente, manteniendo la misma masa.",
+      "Porque la distancia entre partículas disminuye.",
+      "Porque la masa disminuye y el volumen permanece inalterado."
+    ],
+    "correcta": 1,
+    "explicacion": "Por la ley de conservación de la materia, la masa total permanece constante durante un cambio de fase. Sin embargo, en estado gaseoso las partículas se separan drásticamente, incrementando el volumen V. Al ser la densidad inversamente proporcional al volumen (d = m/V), la densidad disminuye.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Ciencias Naturales"
+  },
+  {
+    "id": "CN-11-ICFES-05",
+    "grado": "11",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Biología molecular y síntesis proteica",
+    "pregunta": "En la síntesis de proteínas celular, si durante la transcripción en el núcleo ocurre una mutación que copia incorrectamente los codones del ADN al ARNm, ¿cuál es la consecuencia más probable en la traducción citoplasmática?",
+    "opciones": [
+      "Se produciría una molécula de ADN bicatenario en el ribosoma.",
+      "El ribosoma se vería obligado a entrar físicamente al núcleo celular.",
+      "Los aminoácidos no podrán unirse al ATP celular.",
+      "Se incorporarán aminoácidos distintos alterando la estructura y función de la proteína resultante."
+    ],
+    "correcta": 3,
+    "explicacion": "El código genético se lee en tripletes (codones) en el ARNm. Si la secuencia del ARNm cambia, los ARNt aportarán aminoácidos distintos a los de la secuencia original, lo que puede provocar una proteína no funcional.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Ciencias Naturales"
+  },
+  {
+    "id": "CN-11-ICFES-06",
+    "grado": "11",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Física térmica - Ley de enfriamiento de Newton",
+    "pregunta": "Un recipiente con agua caliente a 100 °C se deja en una habitación a temperatura ambiente de 20 °C. La Ley de Enfriamiento de Newton establece que la tasa de pérdida de calor es directamente proporcional a la diferencia de temperatura entre el objeto y su entorno. Por lo tanto, el agua:",
+    "opciones": [
+      "Se enfriará a una tasa constante uniforme por minuto sin importar la temperatura.",
+      "Se enfriará mucho más rápido al inicio (cuando está a 100 °C) y su enfriamiento se hará más lento a medida que se acerque a 20 °C.",
+      "Nunca llegará a la temperatura del ambiente.",
+      "Comenzará enfriándose muy lento y acelerará exponencialmente su enfriamiento al final."
+    ],
+    "correcta": 1,
+    "explicacion": "La diferencia de temperatura ΔT es máxima al principio (100 - 20 = 80 °C), provocando la mayor tasa de disipación de calor. A medida que T disminuye, ΔT se reduce y la curva de enfriamiento se vuelve asintótica hacia los 20 °C.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Ciencias Naturales"
+  },
+  {
+    "id": "SOC-11-ICFES-01",
+    "grado": "11",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Filosofía moral y argumentación",
+    "pregunta": "Dos personas debaten a favor del vegetarianismo: La primera sostiene que consumir carne es nocivo para la salud porque el animal sufre y transmite energías negativas. La segunda argumenta que consumir animales es un acto amoral derivado de la insensibilidad humana hacia otros seres sintientes. ¿En qué difieren principalmente ambos argumentos?",
+    "opciones": [
+      "El primero se basa en una creencia mística sobre la salud del consumidor, mientras el segundo apela a un principio ético de deber moral hacia los seres vivos.",
+      "El primero busca proteger el medio ambiente y el segundo aumentar la producción agrícola.",
+      "Ambos argumentos son idénticos y usan la misma justificación biológica.",
+      "El segundo rechaza por completo el sufrimiento animal."
+    ],
+    "correcta": 0,
+    "explicacion": "El primer argumento se sustenta en el bienestar individual del consumidor ('energías que perjudican su salud'), mientras el segundo se funda en una postura ética universal sobre la relación moral del ser humano con los demás animales.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Sociales y Ciudadanas"
+  },
+  {
+    "id": "SOC-11-ICFES-04",
+    "grado": "11",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Competencias Ciudadanas y Prejuicios",
+    "pregunta": "El rector de una institución afirma: 'Las personas con orientación diversa merecen respeto, pero los docentes homosexuales deben controlar su comportamiento para no influir en la orientación sexual de los estudiantes'. ¿Por qué esta afirmación encierra un prejuicio infundado?",
+    "opciones": [
+      "Porque asume erróneamente que la orientación sexual de los estudiantes se contagia o determina por la presencia o conducta de un docente en el aula.",
+      "Porque afirma que los docentes deben ser respetados.",
+      "Porque los rectores no tienen autoridad para hablar de educación.",
+      "Porque desconoce que la educación debe ser exclusivamente privada."
+    ],
+    "correcta": 0,
+    "explicacion": "La comunidad científica y constitucional establece que la orientación sexual es un aspecto inherente a la personalidad y no una conducta contagiosa transmitida por la convivencia académica con docentes.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Sociales y Ciudadanas"
+  },
+  {
+    "id": "SOC-11-ICFES-05",
+    "grado": "11",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Historia de Colombia del siglo XX",
+    "pregunta": "Los siguientes magnicidios impactaron profundamente la historia política contemporánea de Colombia:\n1. Asesinato de Luis Carlos Galán (1989)\n2. Asesinato de Jorge Eliécer Gaitán (1948)\n3. Asesinato del general Rafael Uribe Uribe (1914)\n4. Asesinato de Álvaro Gómez Hurtado (1995)\n¿Cuál es el orden cronológico estricto en que ocurrieron?",
+    "opciones": [
+      "2, 3, 1 y 4.",
+      "3, 2, 1 y 4.",
+      "3, 1, 2 y 4.",
+      "4, 3, 2 y 1."
+    ],
+    "correcta": 1,
+    "explicacion": "Cronología exacta: Rafael Uribe Uribe (1914, opción 3) -> Jorge Eliécer Gaitán (1948, opción 2) -> Luis Carlos Galán (1989, opción 1) -> Álvaro Gómez Hurtado (1995, opción 4). El orden cronológico es 3, 2, 1 y 4.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Sociales y Ciudadanas"
+  },
+  {
+    "id": "SOC-11-ICFES-08",
+    "grado": "11",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Constitución y mecanismos de participación",
+    "pregunta": "Cuando una comunidad indígena colombiana exige ser consultada antes de que se inicie un megaproyecto minero o petrolero en su territorio ancestral, está ejerciendo el derecho fundamental constitucional a:",
+    "opciones": [
+      "El plebiscito revocatorio.",
+      "La consulta previa vinculante reconocida en la Constitución y el Convenio 169 de la OIT.",
+      "La expropiación administrativa por vía judicial.",
+      "El referendo constitucional de orden nacional."
+    ],
+    "correcta": 1,
+    "explicacion": "El Artículo 330 de la Constitución Política y el Convenio 169 de la OIT garantizan la Consulta Previa obligatoria a comunidades étnicas para proteger su integridad cultural, social y ambiental frente a proyectos en sus territorios.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Sociales y Ciudadanas"
+  },
+  {
+    "id": "ING-11-ICFES-01",
+    "grado": "11",
+    "asignatura": "Inglés",
+    "tema": "Vocabulary and daily descriptions",
+    "pregunta": "Read the description and choose the correct word: 'A person can carry things like books, a laptop, and personal items in one of these.'",
+    "opciones": [
+      "Handbags / Backpacks",
+      "Pajamas",
+      "Scarf",
+      "Watch"
+    ],
+    "correcta": 0,
+    "explicacion": "Handbags or backpacks are designed specifically for carrying personal items and books.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Inglés"
+  },
+  {
+    "id": "ING-11-ICFES-02",
+    "grado": "11",
+    "asignatura": "Inglés",
+    "tema": "Everyday functional English notices",
+    "pregunta": "Where can you usually see this notice? 'Please, return all borrowed books to the front desk before 5:00 PM.'",
+    "opciones": [
+      "In a library or school study room",
+      "In a swimming pool",
+      "In a shoe store",
+      "In a restaurant kitchen"
+    ],
+    "correcta": 0,
+    "explicacion": "Signs asking to return borrowed books are characteristic notices in libraries and educational study halls.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Inglés"
+  },
+  {
+    "id": "ING-11-ICFES-03",
+    "grado": "11",
+    "asignatura": "Inglés",
+    "tema": "Conversational exchanges and pragmatics",
+    "pregunta": "Complete the conversation appropriately:\n- Person A: 'Grandma, shall I carry those heavy grocery bags for you?'\n- Person B: '_____________________'",
+    "opciones": [
+      "I'm not afraid!",
+      "Where are you?",
+      "That's very kind of you, thank you!",
+      "I don't think so."
+    ],
+    "correcta": 2,
+    "explicacion": "When someone politely offers help ('shall I carry those bags?'), the natural and socially appropriate response is accepting with gratitude ('That's very kind of you').",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Inglés"
+  },
+  {
+    "id": "ING-11-ICFES-04",
+    "grado": "11",
+    "asignatura": "Inglés",
+    "tema": "Reading comprehension and cloze test",
+    "pregunta": "Choose the word that best completes the sentence: 'Coffee is popular around the world. Over the past centuries, few crops _______ as widely traded as coffee beans.'",
+    "opciones": [
+      "have been",
+      "was",
+      "are being",
+      "had being"
+    ],
+    "correcta": 0,
+    "explicacion": "The time expression 'Over the past centuries' connected with plural subject 'few crops' requires the present perfect plural: 'have been'.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Inglés"
+  },
+  {
+    "id": "ING-11-ICFES-05",
+    "grado": "11",
+    "asignatura": "Inglés",
+    "tema": "Grammar and modals",
+    "pregunta": "Select the correct option to complete: 'If you want to achieve a high score in the Saber 11 exam, you _______ practice reading critically every day.'",
+    "opciones": [
+      "must / should",
+      "might not",
+      "couldn't",
+      "would rather"
+    ],
+    "correcta": 0,
+    "explicacion": "'Should' or 'must' express advice and obligation necessary to achieve a stated goal.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 11° Inglés"
+  },
+  {
+    "id": "ICFES-06-MAT-01",
+    "grado": "6",
+    "asignatura": "Matemáticas",
+    "tema": "Unidades de medida y longitud",
+    "pregunta": "A una estudiante le tomaron diferentes medidas para confeccionarle un uniforme escolar nuevo, entre las cuales está la medida del contorno o longitud de la cintura. ¿En qué unidad de medida es correcto y adecuado expresar la longitud de su cintura?",
+    "opciones": [
+      "En décadas.",
+      "En centímetros.",
+      "En metros cuadrados.",
+      "En kilogramos."
+    ],
+    "correcta": 1,
+    "explicacion": "La cintura es una magnitud lineal (longitud o perímetro), por lo cual debe medirse en unidades de longitud como los centímetros. Las décadas son de tiempo, los metros cuadrados son de área y los kilogramos son de masa.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Matemáticas"
+  },
+  {
+    "id": "ICFES-06-MAT-02",
+    "grado": "6",
+    "asignatura": "Matemáticas",
+    "tema": "Operaciones básicas y corrección de datos",
+    "pregunta": "En una carrera de ciclismo intercolegial, el cronómetro oficial registró: Ciclista 1 = 27 minutos, Ciclista 2 = 26 minutos, Ciclista 3 = 29 minutos. Al finalizar, los jueces detectaron que el reloj tenía un retraso y marcó 3 minutos más del tiempo real para cada ciclista. ¿Cuáles fueron los tiempos reales corregidos?",
+    "opciones": [
+      "Ciclista 1: 30 min, Ciclista 2: 29 min, Ciclista 3: 32 min.",
+      "Ciclista 1: 24 min, Ciclista 2: 23 min, Ciclista 3: 26 min.",
+      "Ciclista 1: 27 min, Ciclista 2: 23 min, Ciclista 3: 26 min.",
+      "Ciclista 1: 21 min, Ciclista 2: 20 min, Ciclista 3: 23 min."
+    ],
+    "correcta": 1,
+    "explicacion": "Como el reloj marcó 3 minutos de más, a cada ciclista se le debe restar 3 minutos: 27 - 3 = 24 min; 26 - 3 = 23 min; 29 - 3 = 26 min.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Matemáticas"
+  },
+  {
+    "id": "ICFES-06-MAT-03",
+    "grado": "6",
+    "asignatura": "Matemáticas",
+    "tema": "Fracciones y partes de una unidad",
+    "pregunta": "Camila compra una pizza familiar dividida en 8 porciones iguales. Si comparte 2 porciones con su hermano y 3 porciones con sus primos, ¿qué fracción de la pizza le queda a Camila?",
+    "opciones": [
+      "3/8",
+      "5/8",
+      "2/8",
+      "1/8"
+    ],
+    "correcta": 0,
+    "explicacion": "Camila repartió 2/8 + 3/8 = 5/8 de la pizza. Por lo tanto, la cantidad que le queda es 8/8 - 5/8 = 3/8.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 6.° Matemáticas"
+  },
+  {
+    "id": "ICFES-06-MAT-04",
+    "grado": "6",
+    "asignatura": "Matemáticas",
+    "tema": "Perímetro de figuras geométricas",
+    "pregunta": "Un terreno rectangular para una cancha de microfútbol mide 18 metros de largo y 10 metros de ancho. Si se desea colocar una cerca protectora alrededor de todo el borde, ¿cuántos metros de cerca se necesitan?",
+    "opciones": [
+      "28 metros.",
+      "56 metros.",
+      "180 metros.",
+      "72 metros."
+    ],
+    "correcta": 1,
+    "explicacion": "El perímetro de un rectángulo se calcula sumando todos sus lados: P = 2 × largo + 2 × ancho = 2(18) + 2(10) = 36 + 20 = 56 metros.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Matemáticas"
+  },
+  {
+    "id": "ICFES-06-MAT-05",
+    "grado": "6",
+    "asignatura": "Matemáticas",
+    "tema": "Estadística y moda",
+    "pregunta": "En un salón de sexto grado se registraron las edades de los estudiantes: 11, 12, 11, 11, 13, 12, 11, 12, 11. ¿Cuál es la moda de este conjunto de datos?",
+    "opciones": [
+      "12 años.",
+      "13 años.",
+      "11 años.",
+      "11.5 años."
+    ],
+    "correcta": 2,
+    "explicacion": "La moda es el dato que más veces se repite. La edad 11 aparece 5 veces, mientras que 12 aparece 3 veces y 13 solo una vez. Por lo tanto, la moda es 11.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Matemáticas"
+  },
+  {
+    "id": "ICFES-06-LEN-01",
+    "grado": "6",
+    "asignatura": "Lenguaje",
+    "tema": "Comprensión de infografías y textos expositivos",
+    "pregunta": "Una infografía médica titulada 'Lo que sucede al enojarse' señala que ante la ira 'el sistema nervioso se altera, las arterias se deterioran, el colesterol aumenta y se siente fatiga'. ¿Cuál es el propósito principal de esta infografía?",
+    "opciones": [
+      "Promover que las personas se enojen con mayor frecuencia.",
+      "Advertir a la comunidad sobre los efectos dañinos de la ira en la salud.",
+      "Explicar cómo funcionan los hospitales y las clínicas.",
+      "Enseñar recetas para preparar alimentos bajos en colesterol."
+    ],
+    "correcta": 1,
+    "explicacion": "El texto expone las consecuencias biológicas negativas del enojo para concientizar al lector sobre el cuidado de su salud física y emocional.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Lenguaje"
+  },
+  {
+    "id": "ICFES-06-LEN-02",
+    "grado": "6",
+    "asignatura": "Lenguaje",
+    "tema": "Identificación de la idea principal",
+    "pregunta": "En una fábula, una hormiga trabaja arduamente durante todo el verano almacenando grano en su hormiguero, mientras la cigarra canta despreocupada. Al llegar el frío invierno, la hormiga tiene provisiones suficientes y la cigarra no tiene qué comer. ¿Cuál es la enseñanza o moraleja del relato?",
+    "opciones": [
+      "Cantar es la actividad más productiva para la supervivencia.",
+      "El invierno es la estación ideal para descansar al aire libre.",
+      "El trabajo constante y la previsión aseguran el bienestar futuro.",
+      "Las hormigas no deben convivir en la misma naturaleza con las cigarras."
+    ],
+    "correcta": 2,
+    "explicacion": "La moraleja central de la fábula resalta el valor del esfuerzo, la disciplina y la previsión frente a la pereza o la desidia.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Lenguaje"
+  },
+  {
+    "id": "ICFES-06-LEN-03",
+    "grado": "6",
+    "asignatura": "Lenguaje",
+    "tema": "Sinónimos en contexto",
+    "pregunta": "En la oración: 'El guardameta mostró una agilidad asombrosa al desviar el remate con la punta de los dedos', ¿qué palabra puede sustituir a 'asombrosa' sin cambiar el sentido?",
+    "opciones": [
+      "Increíble.",
+      "Común.",
+      "Dudosa.",
+      "Lenta."
+    ],
+    "correcta": 0,
+    "explicacion": "'Asombrosa' e 'increíble' son sinónimos que denotan algo extraordinario, admirable o que causa gran impresión.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Lenguaje"
+  },
+  {
+    "id": "ICFES-06-CN-01",
+    "grado": "6",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Célula y funciones vitales",
+    "pregunta": "¿Cuál es la principal diferencia observable al microscopio entre una célula vegetal y una célula animal?",
+    "opciones": [
+      "La célula animal tiene núcleo y la célula vegetal carece de él.",
+      "La célula vegetal posee pared celular y cloroplastos, mientras que la animal no.",
+      "La célula vegetal no realiza respiración celular en ningún momento.",
+      "La célula animal puede realizar fotosíntesis con luz solar directa."
+    ],
+    "correcta": 1,
+    "explicacion": "Las células vegetales se distinguen de las animales por tener pared celular rígida de celulosa y cloroplastos donde se produce la fotosíntesis.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-06-CN-02",
+    "grado": "6",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Cadenas tróficas y ecosistemas",
+    "pregunta": "En una laguna, las algas acuáticas son consumidas por pequeños peces herbívoros, los cuales a su vez son presa de una garza. En esta cadena alimenticia, ¿qué papel cumplen las algas?",
+    "opciones": [
+      "Consumidores primarios.",
+      "Descomponedores.",
+      "Productores.",
+      "Consumidores terciarios."
+    ],
+    "correcta": 2,
+    "explicacion": "Las algas realizan fotosíntesis transformando la energía solar en materia orgánica; por tanto, son los organismos productores de la cadena.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-06-CN-03",
+    "grado": "6",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Estados de la materia y ciclo del agua",
+    "pregunta": "Cuando el vapor de agua en la atmósfera se enfría y se transforma en gotas líquidas microscópicas formando las nubes, este cambio de estado físico se denomina:",
+    "opciones": [
+      "Evaporación.",
+      "Fusión.",
+      "Condensación.",
+      "Solidificación."
+    ],
+    "correcta": 2,
+    "explicacion": "El paso de estado gaseoso a líquido por disminución de temperatura se llama condensación.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-06-SOC-01",
+    "grado": "6",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Convivencia escolar e inclusión",
+    "pregunta": "En la clase de Educación Física, los estudiantes eligen integrantes para un partido de fútbol. Llega Pablo, un compañero nuevo proveniente de otra región del país. Algunos alumnos sugieren no invitarlo porque no lo conocen. ¿Qué actitud es democrática e incluyente según el Manual de Convivencia?",
+    "opciones": [
+      "Dejar a Pablo en la banca y prohibirle participar en los juegos del colegio.",
+      "Invitar a Pablo a integrarse al equipo, dándole la bienvenida con respeto y compañerismo.",
+      "Hacer una votación para decidir si Pablo puede estudiar en la institución.",
+      "Pedirle que demuestre que sabe jugar fútbol antes de permitirle hablar."
+    ],
+    "correcta": 1,
+    "explicacion": "La inclusión escolar y el respeto a la diversidad exigen brindar igualdad de oportunidades de participación a todos los estudiantes sin discriminación.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Competencias Ciudadanas"
+  },
+  {
+    "id": "ICFES-06-SOC-02",
+    "grado": "6",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Geografía y zonas climáticas de Colombia",
+    "pregunta": "¿Por qué en Colombia existen climas cálidos, templados, fríos y páramos a pesar de estar ubicada en la zona intertropical de la Tierra?",
+    "opciones": [
+      "Porque en Colombia cambian las cuatro estaciones de invierno, verano, primavera y otoño.",
+      "Debido a la presencia de la Cordillera de los Andes, que genera pisos térmicos según la altitud.",
+      "Porque los vientos del polo sur congelan el norte del país durante todo el año.",
+      "Por la cercanía constante del país al Círculo Polar Ártico."
+    ],
+    "correcta": 1,
+    "explicacion": "El relieve montañoso de la Cordillera de los Andes produce variaciones de temperatura y pisos térmicos a medida que aumenta la altitud sobre el nivel del mar.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Ciencias Sociales"
+  },
+  {
+    "id": "ICFES-07-MAT-01",
+    "grado": "7",
+    "asignatura": "Matemáticas",
+    "tema": "Interpretación de tablas y acumulados",
+    "pregunta": "Un arrendatario revisa la factura del acueducto que indica el consumo mensual de agua: Mayo = 18 m³, Junio = 22 m³, Julio = 20 m³, Agosto = 25 m³. ¿Cuál fue el consumo acumulado de agua durante estos cuatro meses?",
+    "opciones": [
+      "65 m³.",
+      "75 m³.",
+      "85 m³.",
+      "90 m³."
+    ],
+    "correcta": 2,
+    "explicacion": "Sumando los consumos de cada mes: 18 + 22 + 20 + 25 = 85 m³ de agua.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Matemáticas"
+  },
+  {
+    "id": "ICFES-07-MAT-02",
+    "grado": "7",
+    "asignatura": "Matemáticas",
+    "tema": "Números enteros y temperaturas",
+    "pregunta": "En una ciudad andina, la temperatura a las 6:00 a.m. era de 4 °C. Al mediodía la temperatura subió 9 °C y en la noche descendió 8 °C respecto al mediodía. ¿Cuál fue la temperatura final registrada en la noche?",
+    "opciones": [
+      "3 °C.",
+      "5 °C.",
+      "13 °C.",
+      "1 °C."
+    ],
+    "correcta": 1,
+    "explicacion": "Temperatura inicial: 4 °C. Al mediodía: 4 + 9 = 13 °C. En la noche: 13 - 8 = 5 °C.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 7.° Matemáticas"
+  },
+  {
+    "id": "ICFES-07-MAT-03",
+    "grado": "7",
+    "asignatura": "Matemáticas",
+    "tema": "Proporcionalidad directa y regla de tres",
+    "pregunta": "Para preparar una bebida hidratante para 4 jugadores de fútbol se requieren 60 gramos de polvo electrolítico. Si el entrenador necesita preparar bebida para los 18 convocados de la nómina, ¿cuántos gramos de polvo se necesitarán en total?",
+    "opciones": [
+      "240 gramos.",
+      "270 gramos.",
+      "300 gramos.",
+      "180 gramos."
+    ],
+    "correcta": 1,
+    "explicacion": "Por regla de tres: (18 × 60) / 4 = 1080 / 4 = 270 gramos (o 15 gramos por jugador × 18 = 270 g).",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 7.° Matemáticas"
+  },
+  {
+    "id": "ICFES-07-MAT-04",
+    "grado": "7",
+    "asignatura": "Matemáticas",
+    "tema": "Área de triángulos",
+    "pregunta": "Un banderín de esquina de fútbol tiene forma de triángulo con una base de 40 cm y una altura de 30 cm. ¿Cuál es el área de dicho banderín?",
+    "opciones": [
+      "1.200 cm².",
+      "600 cm².",
+      "300 cm².",
+      "70 cm²."
+    ],
+    "correcta": 1,
+    "explicacion": "Área del triángulo = (base × altura) / 2 = (40 × 30) / 2 = 1200 / 2 = 600 cm².",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Matemáticas"
+  },
+  {
+    "id": "ICFES-07-LEN-01",
+    "grado": "7",
+    "asignatura": "Lenguaje",
+    "tema": "Intención comunicativa y tipología textual",
+    "pregunta": "Un artículo de divulgación científica describe cómo el telescopio James Webb captura imágenes del universo primitivo mediante luz infrarroja. ¿Cuál es la intención comunicativa de este tipo de texto?",
+    "opciones": [
+      "Persuadir al lector de comprar un telescopio astronómico.",
+      "Narrar una historia fantástica sobre seres de otras galaxias.",
+      "Informar y explicar descubrimientos científicos al público general.",
+      "Emitir una ordenanza judicial sobre los satélites espaciales."
+    ],
+    "correcta": 2,
+    "explicacion": "Los textos de divulgación científica buscan transmitir conocimientos comprobados de manera clara y accesible para un público amplio.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Lenguaje"
+  },
+  {
+    "id": "ICFES-07-LEN-02",
+    "grado": "7",
+    "asignatura": "Lenguaje",
+    "tema": "Cohesión y conectores lógicos",
+    "pregunta": "En la frase: 'El equipo de fútbol entrenó bajo la lluvia con dedicación; ________, consiguieron la victoria en el partido final', ¿cuál conector expresa la consecuencia adecuada?",
+    "opciones": [
+      "sin embargo",
+      "por lo tanto",
+      "en cambio",
+      "aunque"
+    ],
+    "correcta": 1,
+    "explicacion": "'Por lo tanto' es un conector de consecuencia o conclusión lógica, concordando con la relación causa-efecto entre el entrenamiento y la victoria.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Lenguaje"
+  },
+  {
+    "id": "ICFES-07-CN-01",
+    "grado": "7",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Nutrición y sistema digestivo",
+    "pregunta": "¿En cuál órgano del cuerpo humano ocurre la mayor parte de la digestión química y la absorción de los nutrientes hacia el torrente sanguíneo?",
+    "opciones": [
+      "En el esófago.",
+      "En el intestino delgado.",
+      "En el intestino grueso.",
+      "En la laringe."
+    ],
+    "correcta": 1,
+    "explicacion": "El intestino delgado posee vellosidades intestinales que permiten la máxima absorción de nutrientes, aminoácidos, lípidos y azúcares digeridos.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-07-CN-02",
+    "grado": "7",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Clasificación de la materia",
+    "pregunta": "Al mezclar agua y sal de cocina hasta que la sal se disuelva completamente, se obtiene un líquido transparente y homogéneo en todas sus partes. Esta sustancia es un ejemplo de:",
+    "opciones": [
+      "Mezcla heterogénea.",
+      "Elemento químico puro.",
+      "Mezcla homogénea o solución.",
+      "Compuesto insoluble."
+    ],
+    "correcta": 2,
+    "explicacion": "Una mezcla homogénea es aquella en la que sus componentes no se distinguen a simple vista y presenta una sola fase uniforme.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-07-SOC-01",
+    "grado": "7",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Resolución pacífica de conflictos",
+    "pregunta": "Dos grupos de estudiantes quieren utilizar la misma cancha múltiple durante el recreo para jugar baloncesto y microfútbol respectivamente. Comienzan a discutir fuertemente. ¿Cuál es el mecanismo más asertivo para resolver el desacuerdo?",
+    "opciones": [
+      "Que el grupo más fuerte expulse físicamente al otro grupo.",
+      "Dialogar y acordar un horario compartido o turnarse los días de la semana.",
+      "Suspender las clases de ambos salones de forma indefinida.",
+      "Romper los balones para que ninguno de los dos equipos juegue."
+    ],
+    "correcta": 1,
+    "explicacion": "La mediación y la concertación pacífica permiten satisfacer los intereses de ambas partes mediante acuerdos equitativos y constructivos.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Competencias Ciudadanas"
+  },
+  {
+    "id": "ICFES-08-MAT-01",
+    "grado": "8",
+    "asignatura": "Matemáticas",
+    "tema": "Expresiones algebraicas y perímetros",
+    "pregunta": "Un terreno rectangular tiene una base que mide (2x + 3) metros y una altura de (x + 1) metros. ¿Cuál es la expresión algebraica simplificada que representa el perímetro total del terreno?",
+    "opciones": [
+      "3x + 4",
+      "6x + 8",
+      "2x² + 5x + 3",
+      "4x + 6"
+    ],
+    "correcta": 1,
+    "explicacion": "El perímetro es P = 2(base) + 2(altura) = 2(2x + 3) + 2(x + 1) = 4x + 6 + 2x + 2 = 6x + 8 metros.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Matemáticas"
+  },
+  {
+    "id": "ICFES-08-MAT-02",
+    "grado": "8",
+    "asignatura": "Matemáticas",
+    "tema": "Ecuaciones lineales de primer grado",
+    "pregunta": "Un comerciante de ropa deportiva compra 3 camisetas del mismo precio y paga con un billete de $100.000. Si le devuelven $25.000, ¿cuál es el costo de cada camiseta?",
+    "opciones": [
+      "$20.000.",
+      "$25.000.",
+      "$30.000.",
+      "$35.000."
+    ],
+    "correcta": 1,
+    "explicacion": "Planteando la ecuación: 3c + 25.000 = 100.000 -> 3c = 75.000 -> c = 75.000 / 3 = $25.000 por camiseta.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 8.° Matemáticas"
+  },
+  {
+    "id": "ICFES-08-MAT-03",
+    "grado": "8",
+    "asignatura": "Matemáticas",
+    "tema": "Teorema de Pitágoras",
+    "pregunta": "Una escalera de 5 metros de largo se apoya contra una pared vertical. Si la base de la escalera se encuentra a 3 metros de distancia de la pared en el suelo, ¿a qué altura sobre la pared llega la escalera?",
+    "opciones": [
+      "2 metros.",
+      "4 metros.",
+      "8 metros.",
+      "3.5 metros."
+    ],
+    "correcta": 1,
+    "explicacion": "Por Teorema de Pitágoras: h = √(hipotenusa² - base²) = √(5² - 3²) = √(25 - 9) = √16 = 4 metros.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Matemáticas"
+  },
+  {
+    "id": "ICFES-08-LEN-01",
+    "grado": "8",
+    "asignatura": "Lenguaje",
+    "tema": "Texto argumentativo y tesis",
+    "pregunta": "En un ensayo escolar se expone: 'La actividad física diaria en los colegios no solo mejora el rendimiento cardiovascular de los jóvenes, sino que estimula la memoria y reduce la ansiedad'. ¿Cuál es la tesis u opinión central defendida por el autor?",
+    "opciones": [
+      "Que el ejercicio físico escolar produce beneficios tanto físicos como cognitivos.",
+      "Que los estudiantes deben suspender las clases teóricas para siempre.",
+      "Que el deporte solo debe practicarse durante las vacaciones.",
+      "Que la ansiedad es imposible de tratar en la juventud."
+    ],
+    "correcta": 0,
+    "explicacion": "La tesis afirma que el deporte escolar genera ventajas integrales: salud corporal (cardiovascular) y mental (cognitiva y emocional).",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Lenguaje"
+  },
+  {
+    "id": "ICFES-08-CN-01",
+    "grado": "8",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Reproducción y temperatura en reptiles",
+    "pregunta": "En una playa tropical, biólogos observan que cuando la arena supera los 31 °C durante la incubación, de los huevos de tortuga marina nacen exclusivamente hembras, mientras que a temperaturas menores a 28 °C nacen machos. Ante el calentamiento global, ¿cuál es el mayor riesgo para la especie?",
+    "opciones": [
+      "Que aumente la cantidad de machos en la población.",
+      "Una escasez crítica de machos que impida la fertilización y reproducción a largo plazo.",
+      "Que las tortugas desarrollen pulmones más pequeños.",
+      "Que las tortugas marinas migren al espacio exterior."
+    ],
+    "correcta": 1,
+    "explicacion": "El aumento sostenido de la temperatura ambiental provoca un sesgo extremo hacia el nacimiento de hembras, reduciendo los machos necesarios para mantener la reproducción genética de la especie.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-08-CN-02",
+    "grado": "8",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Sistema endocrino y hormonas",
+    "pregunta": "Durante un penal en el minuto 90 de una final de fútbol, el arquero experimenta aceleración cardíaca, dilatación de pupilas y estado de máxima alerta. ¿Cuál hormona es responsable de esta respuesta inmediata de 'lucha o huida'?",
+    "opciones": [
+      "Insulina.",
+      "Adrenalina.",
+      "Melatonina.",
+      "Estrógeno."
+    ],
+    "correcta": 1,
+    "explicacion": "La adrenalina, segregada por las glándulas suprarrenales, prepara al cuerpo para actuar rápidamente ante situaciones de estrés o esfuerzo intenso.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-08-SOC-01",
+    "grado": "8",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Revolución Industrial e impactos sociales",
+    "pregunta": "¿Cuál fue una de las principales consecuencias sociales de la Revolución Industrial en el siglo XIX en Europa?",
+    "opciones": [
+      "El retorno masivo de la población hacia el campo y la agricultura primitiva.",
+      "La migración del campo a las ciudades y el surgimiento de la clase obrera trabajadora.",
+      "La desaparición absoluta de los medios de transporte ferroviarios.",
+      "La prohibición total del comercio internacional."
+    ],
+    "correcta": 1,
+    "explicacion": "La industrialización provocó un rápido éxodo rural hacia los centros urbanos fabriles, consolidando la clase obrera y los movimientos laborales modernos.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Ciencias Sociales"
+  },
+  {
+    "id": "ICFES-09-MAT-01",
+    "grado": "9",
+    "asignatura": "Matemáticas",
+    "tema": "Sistemas de ecuaciones lineales 2x2",
+    "pregunta": "En una taquilla se vendieron 100 boletas para un partido de fútbol entre tribuna Occidental ($20.000) y Oriental ($10.000), recaudando un total de $1.400.000. ¿Cuántas boletas de Occidental se vendieron?",
+    "opciones": [
+      "30 boletas.",
+      "40 boletas.",
+      "50 boletas.",
+      "60 boletas."
+    ],
+    "correcta": 1,
+    "explicacion": "Sistema: x + y = 100 y 20.000x + 10.000y = 1.400.000 -> 2x + y = 140. Restando: x = 40 boletas de Occidental y 60 de Oriental.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 9.° Matemáticas"
+  },
+  {
+    "id": "ICFES-09-MAT-02",
+    "grado": "9",
+    "asignatura": "Matemáticas",
+    "tema": "Función cuadrática y trayectorias",
+    "pregunta": "La trayectoria de un disparo a puerta está modelada por h(t) = -5t² + 20t, donde h es la altura en metros y t el tiempo en segundos. ¿En qué segundo alcanza el balón su altura máxima?",
+    "opciones": [
+      "1 segundo.",
+      "2 segundos.",
+      "4 segundos.",
+      "5 segundos."
+    ],
+    "correcta": 1,
+    "explicacion": "El vértice de una parábola y = at² + bt ocurre en t = -b / (2a) = -20 / (2 × -5) = -20 / -10 = 2 segundos.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 9.° Matemáticas"
+  },
+  {
+    "id": "ICFES-09-LEN-01",
+    "grado": "9",
+    "asignatura": "Lenguaje",
+    "tema": "Análisis de columnas de opinión y sesgos",
+    "pregunta": "En un editorial periodístico, el autor utiliza expresiones como 'indiscutiblemente desastroso' y 'evidente ineptitud' para calificar una medida pública. Estas expresiones reflejan que el texto:",
+    "opciones": [
+      "Es un reporte neutral y puramente estadístico.",
+      "Contiene juicios valorativos y una postura subjetiva del autor.",
+      "Es una narración literaria sobre hechos mitológicos.",
+      "Constituye una ley promulgada por el Congreso."
+    ],
+    "correcta": 1,
+    "explicacion": "Los adjetivos valorativos y enfáticos revelan la subjetividad y el juicio crítico del columnista en un texto de opinión.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 9.° Lenguaje"
+  },
+  {
+    "id": "ICFES-09-CN-01",
+    "grado": "9",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Genética mendeliana y fenotipo",
+    "pregunta": "Si se cruzan dos plantas heterocigotas para el color de la semilla (Aa × Aa), donde el alelo A (amarillo) es dominante sobre el alelo a (verde), ¿cuál es la probabilidad de que una planta descendiente tenga semillas verdes (aa)?",
+    "opciones": [
+      "100%",
+      "75%",
+      "50%",
+      "25% (1/4)"
+    ],
+    "correcta": 3,
+    "explicacion": "El cuadro de Punnett para Aa × Aa produce: AA (25%), Aa (50%), aa (25%). El fenotipo recesivo (aa) tiene 25% de probabilidad.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 9.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-09-SOC-01",
+    "grado": "9",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Mecanismos de participación ciudadana en Colombia",
+    "pregunta": "De acuerdo con la Constitución Política de Colombia de 1991, ¿cuál mecanismo permite a los ciudadanos solicitar formalmente información a una entidad estatal y exigir una pronta respuesta en plazos legales?",
+    "opciones": [
+      "El plebiscito.",
+      "El derecho de petición.",
+      "La moción de censura.",
+      "El referendo derogatorio."
+    ],
+    "correcta": 1,
+    "explicacion": "El Artículo 23 de la Constitución consagra el derecho fundamental de petición para presentar solicitudes respetuosas de interés general o particular a las autoridades.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 9.° Competencias Ciudadanas"
+  },
+  {
+    "id": "ICFES-09-ING-01",
+    "grado": "9",
+    "asignatura": "Inglés",
+    "tema": "Vocabulary: sports & activities",
+    "pregunta": "Read the description: 'A person who makes sure that players obey the rules in a football match and wears a whistle.' Who is this person?",
+    "opciones": [
+      "The goalkeeper.",
+      "The referee.",
+      "The striker.",
+      "The spectator."
+    ],
+    "correcta": 1,
+    "explicacion": "'The referee' (el árbitro) is the person responsible for enforcing the rules and blowing the whistle during a match.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 9.° Inglés"
+  },
+  {
+    "id": "ICFES-09-ING-02",
+    "grado": "9",
+    "asignatura": "Inglés",
+    "tema": "Reading comprehension: notices & places",
+    "pregunta": "Where can you usually see this sign? 'PLEASE KEEP OFF THE GRASS - SEEDING IN PROGRESS'",
+    "opciones": [
+      "In a public park or garden.",
+      "In a chemistry laboratory.",
+      "Inside a cinema theater.",
+      "At an airport terminal."
+    ],
+    "correcta": 0,
+    "explicacion": "'Keep off the grass' is a common notice seen in public parks, gardens, and sports grounds to protect newly planted grass.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 9.° Inglés"
+  },
+  {
+    "id": "ICFES-10-MAT-01",
+    "grado": "10",
+    "asignatura": "Matemáticas",
+    "tema": "Trigonometría: razones trigonométricas",
+    "pregunta": "Desde un punto en el suelo ubicado a 12 metros de la base de un poste vertical de iluminación de un estadio, se observa la parte superior con un ángulo de elevación de 30°. Sabiendo que tan(30°) ≈ 0.577, ¿cuál es la altura aproximada del poste?",
+    "opciones": [
+      "6.9 metros.",
+      "12 metros.",
+      "15.4 metros.",
+      "20.8 metros."
+    ],
+    "correcta": 0,
+    "explicacion": "tan(θ) = opuesto / adyacente -> Altura = 12 × tan(30°) = 12 × 0.577 ≈ 6.92 metros.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 10.° Matemáticas"
+  },
+  {
+    "id": "ICFES-10-MAT-02",
+    "grado": "10",
+    "asignatura": "Matemáticas",
+    "tema": "Probabilidad condicionada",
+    "pregunta": "En un torneo de fútbol de 20 equipos, 12 son sudamericanos y 8 son europeos. Se seleccionan dos equipos al azar sin reemplazo para el partido inaugural. ¿Cuál es la probabilidad de que ambos sean sudamericanos?",
+    "opciones": [
+      "12/20",
+      "33/95",
+      "144/400",
+      "8/20"
+    ],
+    "correcta": 1,
+    "explicacion": "P(1.° SA) = 12/20. P(2.° SA | 1.° SA) = 11/19. P(ambos) = (12/20) × (11/19) = (3/5) × (11/19) = 33/95 (≈ 34.7%).",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Matemáticas"
+  },
+  {
+    "id": "ICFES-10-LEC-01",
+    "grado": "10",
+    "asignatura": "Lectura Crítica",
+    "tema": "Análisis de falacias y argumentos",
+    "pregunta": "Un analista deportivo afirma: 'El equipo visitante jamás podrá ganar el campeonato porque su director técnico no nació en la capital'. ¿Qué tipo de falacia lógica se comete en este razonamiento?",
+    "opciones": [
+      "Falacia ad hominem (ataque a la procedencia personal en lugar de evaluar las capacidades tácticas).",
+      "Apelación a la autoridad científica.",
+      "Generalización estadística basada en datos numéricos.",
+      "Argumento por causa demostrada."
+    ],
+    "correcta": 0,
+    "explicacion": "Descalificar la capacidad profesional de un entrenador por su lugar de origen es una falacia ad hominem, pues no evalúa sus méritos deportivos reales.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Lectura Crítica"
+  },
+  {
+    "id": "ICFES-10-CN-01",
+    "grado": "10",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Cinemática y leyes de Newton",
+    "pregunta": "Un balón de fútbol de 0.45 kg que se encuentra en reposo sobre el punto penal recibe una fuerza neta constante de 90 N durante el remate de un delantero. De acuerdo con la Segunda Ley de Newton (F = m × a), ¿cuál es la aceleración que adquiere el balón?",
+    "opciones": [
+      "40.5 m/s².",
+      "90 m/s².",
+      "200 m/s².",
+      "405 m/s²."
+    ],
+    "correcta": 2,
+    "explicacion": "a = F / m = 90 N / 0.45 kg = 200 m/s².",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 10.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-10-SOC-01",
+    "grado": "10",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Estructura del Estado colombiano y ramas del poder",
+    "pregunta": "¿Cuál rama del poder público en Colombia tiene como función constitucional principal hacer las leyes y ejercer el control político sobre el gobierno?",
+    "opciones": [
+      "La Rama Ejecutiva (Presidencia y Ministerios).",
+      "La Rama Legislativa (Congreso de la República: Senado y Cámara de Representantes).",
+      "La Rama Judicial (Cortes y Juzgados).",
+      "Los Órganos de Control (Fiscalía y Contraloría)."
+    ],
+    "correcta": 1,
+    "explicacion": "La Rama Legislativa, integrada por el Congreso bicameral, expide las leyes y realiza control político al poder ejecutivo.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Sociales y Ciudadanas"
+  },
+  {
+    "id": "ICFES-10-ING-01",
+    "grado": "10",
+    "asignatura": "Inglés",
+    "tema": "Conditional sentences (Second Conditional)",
+    "pregunta": "Complete the sentence correctly: 'If our national team ________ the final match, they would qualify for the international championship.'",
+    "opciones": [
+      "won",
+      "will win",
+      "wins",
+      "have won"
+    ],
+    "correcta": 0,
+    "explicacion": "The second conditional structure requires 'If + Past Simple, would + base verb' to express a hypothetical situation in the present/future.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Inglés"
+  },
+  {
+    "id": "ICFES-06-MAT-06",
+    "grado": "6",
+    "asignatura": "Matemáticas",
+    "tema": "Múltiplos y divisores",
+    "pregunta": "El timbre de la escuela suena cada 45 minutos y el silbato de entrenamiento deportivo suena cada 30 minutos. Si ambos sonaron juntos a las 8:00 a.m., ¿a qué hora volverán a sonar juntos por primera vez?",
+    "opciones": [
+      "A las 8:45 a.m.",
+      "A las 9:00 a.m.",
+      "A las 9:30 a.m.",
+      "A las 10:00 a.m."
+    ],
+    "correcta": 2,
+    "explicacion": "El mínimo común múltiplo (m.c.m.) entre 45 y 30 es 90 minutos (1 hora y media). Por tanto, 8:00 a.m. + 1h 30min = 9:30 a.m.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Matemáticas"
+  },
+  {
+    "id": "ICFES-06-MAT-07",
+    "grado": "6",
+    "asignatura": "Matemáticas",
+    "tema": "Porcentajes elementales",
+    "pregunta": "Un balón de fútbol cuesta $80.000 y tiene un descuento promocional del 25% por la inauguración del torneo. ¿Cuánto dinero se descuenta del valor original?",
+    "opciones": [
+      "$15.000.",
+      "$20.000.",
+      "$25.000.",
+      "$60.000."
+    ],
+    "correcta": 1,
+    "explicacion": "El 25% de $80.000 es la cuarta parte: 80.000 / 4 = $20.000.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Matemáticas"
+  },
+  {
+    "id": "ICFES-06-LEN-04",
+    "grado": "6",
+    "asignatura": "Lenguaje",
+    "tema": "Estructura de la noticia periodística",
+    "pregunta": "¿Cuál es la función del titular en una noticia sobre la victoria de la selección de fútbol?",
+    "opciones": [
+      "Contar todos los detalles minuciosos del reglamento deportivo.",
+      "Captar la atención del lector y resumir el hecho más relevante.",
+      "Describir la biografía de los familiares del árbitro.",
+      "Explicar fórmulas químicas para fabricar balones."
+    ],
+    "correcta": 1,
+    "explicacion": "El titular de una noticia busca informar el hecho principal de forma sintética, atractiva y directa para el lector.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Lenguaje"
+  },
+  {
+    "id": "ICFES-06-CN-04",
+    "grado": "6",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Adaptaciones de los seres vivos",
+    "pregunta": "Las aves acuáticas como los patos poseen patas con membranas interdigitales (entre los dedos). ¿Cuál es la ventaja adaptativa de esta característica en su hábitat?",
+    "opciones": [
+      "Facilitar el vuelo a alturas extremas en la cordillera.",
+      "Propulsarse eficazmente para nadar en el agua como si fueran remos.",
+      "Correr a velocidades superiores a las de un felino terrestre.",
+      "Enterrarse profundamente bajo la arena del desierto."
+    ],
+    "correcta": 1,
+    "explicacion": "Las membranas interdigitales aumentan la superficie de contacto con el agua, permitiendo una natación y propulsión hidrodinámica eficiente.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-06-SOC-03",
+    "grado": "6",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Democracia escolar: personero estudiantil",
+    "pregunta": "¿Cuál es la función principal del Personero Estudiantil en los colegios de Colombia según la Ley General de Educación?",
+    "opciones": [
+      "Asignar las calificaciones académicas de los exámenes finales.",
+      "Promover y defender los derechos y deberes de los estudiantes consagrados en el Manual de Convivencia.",
+      "Contratar a los docentes y al personal de vigilancia del plantel.",
+      "Decidir el valor de las pensiones y matrículas escolares."
+    ],
+    "correcta": 1,
+    "explicacion": "El personero escolar es el vocero y defensor institucional de los derechos y deberes de los estudiantes en la comunidad educativa.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Competencias Ciudadanas"
+  },
+  {
+    "id": "ICFES-07-MAT-05",
+    "grado": "7",
+    "asignatura": "Matemáticas",
+    "tema": "Operaciones con fracciones y números racionales",
+    "pregunta": "Un atleta recorre 3/5 de una pista atlética en la mañana y 1/4 de la pista en la tarde. ¿Qué fracción total de la pista ha recorrido en el día?",
+    "opciones": [
+      "4/9",
+      "4/20",
+      "17/20",
+      "7/10"
+    ],
+    "correcta": 2,
+    "explicacion": "Mínimo común denominador entre 5 y 4 es 20: 3/5 = 12/20 y 1/4 = 5/20. Suma: 12/20 + 5/20 = 17/20 de la pista.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 7.° Matemáticas"
+  },
+  {
+    "id": "ICFES-07-MAT-06",
+    "grado": "7",
+    "asignatura": "Matemáticas",
+    "tema": "Medidas de tendencia central: la mediana",
+    "pregunta": "Las estaturas en centímetros de 5 jugadores de un equipo de microfútbol son: 165, 170, 168, 175, 172. ¿Cuál es la mediana de las estaturas?",
+    "opciones": [
+      "168 cm.",
+      "170 cm.",
+      "171 cm.",
+      "172 cm."
+    ],
+    "correcta": 1,
+    "explicacion": "Ordenando los datos de menor a mayor: 165, 168, 170, 172, 175. El valor central (posición 3) es 170 cm.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Matemáticas"
+  },
+  {
+    "id": "ICFES-07-LEN-03",
+    "grado": "7",
+    "asignatura": "Lenguaje",
+    "tema": "Figuras retóricas: metáfora",
+    "pregunta": "En la crónica deportiva se lee: 'El volante diez era una brújula en el medio campo, señalando siempre el rumbo exacto hacia el gol'. La expresión 'era una brújula' es una metáfora que indica que:",
+    "opciones": [
+      "El jugador llevaba un instrumento metálico magnético en el uniforme.",
+      "El jugador orientaba y guiaba con inteligencia las jugadas ofensivas de su equipo.",
+      "El futbolista estaba perdido en el terreno de juego.",
+      "El deportista no conocía la posición de las porterías."
+    ],
+    "correcta": 1,
+    "explicacion": "La metáfora asocia las propiedades de una brújula (orientar, dar dirección clara) con la visión y capacidad de liderazgo del volante de creación.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Lenguaje"
+  },
+  {
+    "id": "ICFES-07-CN-03",
+    "grado": "7",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Sistema circulatorio y transporte de oxígeno",
+    "pregunta": "¿Cuál componente de la sangre humana es el encargado de transportar el oxígeno desde los pulmones hacia los músculos durante un intenso partido de fútbol?",
+    "opciones": [
+      "Las plaquetas.",
+      "Los glóbulos rojos (eritrocitos) mediante la hemoglobina.",
+      "Los glóbulos blancos (leucocitos).",
+      "El plasma linfático exclusivamente."
+    ],
+    "correcta": 1,
+    "explicacion": "Los glóbulos rojos contienen hemoglobina, proteína rica en hierro que se une al oxígeno en los alvéolos pulmonares y lo transporta por los vasos sanguíneos.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-07-SOC-02",
+    "grado": "7",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Población y diversidad cultural en Colombia",
+    "pregunta": "La Constitución colombiana declara que el país es un Estado 'pluriétnico y multicultural'. Esto significa que el Estado tiene el deber de:",
+    "opciones": [
+      "Homogeneizar las costumbres para que todos los ciudadanos hablen un solo dialecto.",
+      "Reconocer, proteger y respetar las lenguas, tradiciones y derechos de las comunidades indígenas, afrodescendientes y raizales.",
+      "Impedir que las comunidades tradicionales participen en elecciones democráticas.",
+      "Prohibir las manifestaciones artísticas regionales."
+    ],
+    "correcta": 1,
+    "explicacion": "El principio de diversidad étnica y cultural consagra el respeto y la salvaguarda de la identidad de los distintos grupos étnicos de la nación.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Competencias Ciudadanas"
+  },
+  {
+    "id": "ICFES-08-MAT-04",
+    "grado": "8",
+    "asignatura": "Matemáticas",
+    "tema": "Factorización de polinomios",
+    "pregunta": "¿Cuál es la factorización correcta del binomio x² - 49?",
+    "opciones": [
+      "(x - 7)²",
+      "(x + 7)(x - 7)",
+      "(x + 49)(x - 1)",
+      "x(x - 49)"
+    ],
+    "correcta": 1,
+    "explicacion": "Es una diferencia de cuadrados perfectos: a² - b² = (a + b)(a - b). Como √49 = 7, entonces x² - 49 = (x + 7)(x - 7).",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Matemáticas"
+  },
+  {
+    "id": "ICFES-08-MAT-05",
+    "grado": "8",
+    "asignatura": "Matemáticas",
+    "tema": "Volumen de prismas rectangulares",
+    "pregunta": "Un contenedor para guardar balones tiene forma de caja rectangular con dimensiones: 2 metros de largo, 1.5 metros de ancho y 1 metro de alto. ¿Cuál es su capacidad volumétrica?",
+    "opciones": [
+      "3 m³.",
+      "4.5 m³.",
+      "6 m³.",
+      "2.5 m³."
+    ],
+    "correcta": 0,
+    "explicacion": "Volumen = largo × ancho × alto = 2 m × 1.5 m × 1 m = 3 m³.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Matemáticas"
+  },
+  {
+    "id": "ICFES-08-LEN-02",
+    "grado": "8",
+    "asignatura": "Lenguaje",
+    "tema": "Diferenciación entre hechos y opiniones",
+    "pregunta": "En un texto sobre fútbol se leen cuatro oraciones. ¿Cuál de ellas expresa un HECHO objetivo comprobable?",
+    "opciones": [
+      "El partido de ayer fue el espectáculo más aburrido del año.",
+      "El delantero número 9 marcó dos goles en el segundo tiempo.",
+      "El uniforme del equipo rival es el más feo de la liga.",
+      "El árbitro central no tiene buen sentido del humor."
+    ],
+    "correcta": 1,
+    "explicacion": "Que el delantero marcó dos goles es un dato verificable mediante el acta y el marcador del partido, a diferencia de los juicios de gusto subjetivos.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Lenguaje"
+  },
+  {
+    "id": "ICFES-08-CN-03",
+    "grado": "8",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Fuerzas y Primera Ley de Newton (Inercia)",
+    "pregunta": "Un balón rueda sobre el césped y paulatinamente pierde velocidad hasta detenerse por completo. ¿Por qué se detiene el balón si nadie lo tocó?",
+    "opciones": [
+      "Porque los objetos en movimiento pierden energía de forma espontánea sin interactuar con nada.",
+      "Porque la fuerza de fricción o rozamiento entre el balón y el césped actúa en sentido opuesto al movimiento.",
+      "Porque la gravedad solo atrae los objetos cuando están en reposo.",
+      "Porque el aire dentro del balón se enfría y frena el cuero."
+    ],
+    "correcta": 1,
+    "explicacion": "Por la Primera Ley de Newton, un cuerpo mantiene su movimiento uniforme a menos que actúe una fuerza externa neta; aquí la fuerza de fricción opuesta desacelera el balón.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 8.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-08-SOC-02",
+    "grado": "8",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Cuidado ambiental y desarrollo sostenible",
+    "pregunta": "¿Qué busca el concepto de 'desarrollo sostenible' promovido por los Objetivos de Desarrollo Sostenible (ODS)?",
+    "opciones": [
+      "Explotar todos los recursos naturales lo más rápido posible sin regulaciones.",
+      "Satisfacer las necesidades de la generación presente sin comprometer la capacidad de las futuras generaciones para satisfacer sus propias necesidades.",
+      "Detener por completo toda actividad económica en el planeta.",
+      "Permitir la contaminación de ríos siempre que aumenten las ganancias industriales."
+    ],
+    "correcta": 1,
+    "explicacion": "El desarrollo sostenible equilibra el crecimiento económico, la inclusión social y la preservación ambiental a largo plazo.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Ciencias Sociales"
+  },
+  {
+    "id": "ICFES-09-MAT-03",
+    "grado": "9",
+    "asignatura": "Matemáticas",
+    "tema": "Función lineal y pendiente",
+    "pregunta": "Una empresa de transporte cobra una tarifa fija de $5.000 más $2.000 por cada kilómetro recorrido. Si un aficionado recorre x kilómetros para llegar al estadio, ¿cuál ecuación describe el costo total C(x)?",
+    "opciones": [
+      "C(x) = 5.000x + 2.000",
+      "C(x) = 2.000x + 5.000",
+      "C(x) = 7.000x",
+      "C(x) = 5.000 / x"
+    ],
+    "correcta": 1,
+    "explicacion": "La pendiente m es la tarifa variable ($2.000 por km) y el intercepto b es el valor fijo ($5.000): C(x) = 2.000x + 5.000.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 9.° Matemáticas"
+  },
+  {
+    "id": "ICFES-09-LEN-02",
+    "grado": "9",
+    "asignatura": "Lenguaje",
+    "tema": "Cohesión referencial: anáfora y deícticos",
+    "pregunta": "En el enunciado: 'La capitana levantó el trofeo de la Copa del Saber; ella agradeció con lágrimas a la hinchada', la palabra 'ella' cumple la función de:",
+    "opciones": [
+      "Introducir un personaje nuevo en la narración.",
+      "Hacer referencia anafórica para evitar la repetición de 'La capitana'.",
+      "Indicar una pregunta indirecta sobre el juego.",
+      "Servir como conector de causa y consecuencia."
+    ],
+    "correcta": 1,
+    "explicacion": "Los pronombres anafóricos como 'ella' sustituyen a un referente ya nombrado para mantener la fluidez y cohesión del texto.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 9.° Lenguaje"
+  },
+  {
+    "id": "ICFES-09-CN-02",
+    "grado": "9",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Evolución y selección natural de Darwin",
+    "pregunta": "De acuerdo con la teoría de la evolución por selección natural planteada por Charles Darwin:",
+    "opciones": [
+      "Los organismos individuales deciden voluntariamente mutar sus órganos durante su vida para adaptarse.",
+      "Los individuos con variaciones genéticas favorables en un entorno determinado tienen mayor probabilidad de sobrevivir y reproducirse.",
+      "Todas las especies vivas aparecieron en la Tierra al mismo tiempo sin ancestros comunes.",
+      "La selección natural favorece siempre a los animales más pesados y de mayor tamaño."
+    ],
+    "correcta": 1,
+    "explicacion": "La selección natural actúa sobre la variabilidad genética preexistente: los rasgos ventajosos confieren mayor éxito reproductivo diferencial.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 9.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-09-SOC-02",
+    "grado": "9",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Acción de Tutela en Colombia",
+    "pregunta": "¿Qué es la Acción de Tutela establecida en el Artículo 86 de la Constitución colombiana?",
+    "opciones": [
+      "Un impuesto obligatorio para financiar eventos deportivos.",
+      "Un mecanismo judicial expedito para la protección inmediata de los derechos fundamentales cuando resulten vulnerados o amenazados.",
+      "Un examen académico que deben presentar los bachilleres para graduarse.",
+      "Un tratado de libre comercio suscrito entre dos países."
+    ],
+    "correcta": 1,
+    "explicacion": "La tutela es la herramienta constitucional más importante para reclamar ante los jueces la protección inmediata de derechos fundamentales como la salud, la vida y la educación.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 9.° Competencias Ciudadanas"
+  },
+  {
+    "id": "ICFES-09-ING-03",
+    "grado": "9",
+    "asignatura": "Inglés",
+    "tema": "Present Perfect vs. Past Simple",
+    "pregunta": "Select the correct option to complete the conversation:\nCoach: 'Have you ever scored a goal from a corner kick?'\nPlayer: 'Yes, I ________ one last month!'",
+    "opciones": [
+      "score",
+      "have scored",
+      "scored",
+      "am scoring"
+    ],
+    "correcta": 2,
+    "explicacion": "When referring to a specific finished past time ('last month'), English requires the Past Simple tense ('scored').",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 9.° Inglés"
+  },
+  {
+    "id": "ICFES-10-MAT-03",
+    "grado": "10",
+    "asignatura": "Matemáticas",
+    "tema": "Geometría analítica: distancia entre dos puntos",
+    "pregunta": "En un plano cartesiano que representa el campo de juego, el punto penal está en las coordenadas A(11, 0) y el centro del campo en B(0, 0). ¿Cuál es la distancia en línea recta entre ambos puntos?",
+    "opciones": [
+      "0 unidades.",
+      "11 unidades.",
+      "22 unidades.",
+      "121 unidades."
+    ],
+    "correcta": 1,
+    "explicacion": "Distancia d = √((x₂ - x₁)² + (y₂ - y₁)²) = √((11 - 0)² + (0 - 0)²) = √121 = 11 unidades.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Matemáticas"
+  },
+  {
+    "id": "ICFES-10-MAT-04",
+    "grado": "10",
+    "asignatura": "Matemáticas",
+    "tema": "Ley de senos y cosenos",
+    "pregunta": "¿Cuándo es indispensable utilizar la Ley del Coseno para resolver un triángulo no rectángulo?",
+    "opciones": [
+      "Cuando se conocen los tres lados (LLL) o dos lados y el ángulo comprendido entre ellos (LAL).",
+      "Únicamente cuando el triángulo tiene un ángulo recto de 90°.",
+      "Cuando se conocen exclusivamente los tres ángulos interiores.",
+      "Cuando todos los lados son perpendiculares entre sí."
+    ],
+    "correcta": 0,
+    "explicacion": "La Ley del Coseno (c² = a² + b² - 2ab cos(C)) se aplica para casos LAL y LLL donde la Ley del Seno no puede relacionar directamente pares lado-ángulo.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Matemáticas"
+  },
+  {
+    "id": "ICFES-10-LEC-02",
+    "grado": "10",
+    "asignatura": "Lectura Crítica",
+    "tema": "Tesis, premisas y contraargumentos",
+    "pregunta": "Un autor plantea: 'Si bien la tecnología del VAR en el fútbol reduce los errores arbitrales en jugadas polémicas, su aplicación excesiva interrumpe la fluidez y emoción natural del partido'. ¿Qué recurso argumentativo emplea el autor?",
+    "opciones": [
+      "Una concesión (reconoce un beneficio previo para luego ponderar una desventaja central).",
+      "Un ataque personal contra los fabricantes de pantallas.",
+      "Una narración en verso rimado.",
+      "Una conclusión falsa sin relación con el tema."
+    ],
+    "correcta": 0,
+    "explicacion": "La concesión argumentativa ('si bien X, sin embargo Y') valida parcialmente un punto contrario para dar mayor solidez a su argumento principal.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Lectura Crítica"
+  },
+  {
+    "id": "ICFES-10-CN-02",
+    "grado": "10",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Conservación de la energía mecánica",
+    "pregunta": "Un arquero despeja un balón hacia arriba. En el punto más alto de su trayectoria, justo antes de empezar a descender:",
+    "opciones": [
+      "Su energía potencial gravitacional es mínima y su energía cinética es máxima.",
+      "Su energía cinética vertical es cero y su energía potencial gravitacional alcanza su valor máximo.",
+      "Su masa se reduce a la mitad por la altura.",
+      "La fuerza de gravedad deja de actuar sobre el balón."
+    ],
+    "correcta": 1,
+    "explicacion": "Al alcanzar la altura máxima, la velocidad vertical es 0 (energía cinética = 0) y toda la energía mecánica se ha transformado en energía potencial gravitacional (Ep = mgh).",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-10-SOC-02",
+    "grado": "10",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Globalización económica y soberanía",
+    "pregunta": "¿Qué caracteriza principalmente al fenómeno de la globalización económica contemporánea?",
+    "opciones": [
+      "El cierre absoluto de fronteras y la eliminación del transporte marítimo.",
+      "La interconexión de los mercados financieros mundiales, el libre flujo de bienes y la expansión de las comunicaciones digitales.",
+      "La prohibición mundial del uso de divisas extranjeras.",
+      "La producción exclusiva de alimentos para el autoconsumo local."
+    ],
+    "correcta": 1,
+    "explicacion": "La globalización económica se define por la integración internacional de mercados, cadenas globales de suministro y telecomunicaciones instantáneas.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Sociales y Ciudadanas"
+  },
+  {
+    "id": "ICFES-10-ING-02",
+    "grado": "10",
+    "asignatura": "Inglés",
+    "tema": "Passive voice in sports news",
+    "pregunta": "Choose the correct passive voice sentence for: 'Millions of supporters watched the World Cup final.'",
+    "opciones": [
+      "The World Cup final was watched by millions of supporters.",
+      "The World Cup final were watching by millions of supporters.",
+      "The World Cup final watched millions of supporters.",
+      "Millions of supporters were watched by the final."
+    ],
+    "correcta": 0,
+    "explicacion": "In Past Simple Passive, the structure is 'Subject (singular) + was + Past Participle + by agent': 'The World Cup final was watched by...'",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Inglés"
+  },
+  {
+    "id": "ICFES-06-ING-01",
+    "grado": "6",
+    "asignatura": "Inglés",
+    "tema": "Present Simple & School Life",
+    "pregunta": "Complete the conversation: 'What time does the soccer match start?' — '______ at 3:00 PM.'",
+    "opciones": [
+      "It starts",
+      "They start",
+      "He start",
+      "We starting"
+    ],
+    "correcta": 0,
+    "explicacion": "Para la tercera persona singular ('the soccer match' = it) en presente simple, el verbo lleva 's' ('It starts').",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Inglés"
+  },
+  {
+    "id": "ICFES-06-ING-02",
+    "grado": "6",
+    "asignatura": "Inglés",
+    "tema": "Sports Vocabulary",
+    "pregunta": "Where do people usually play a football game?",
+    "opciones": [
+      "In a library",
+      "On a stadium pitch",
+      "In a kitchen",
+      "Inside a cinema"
+    ],
+    "correcta": 1,
+    "explicacion": "'Pitch' o 'stadium' es la cancha o estadio donde se juega fútbol profesional.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Inglés"
+  },
+  {
+    "id": "ICFES-06-ING-03",
+    "grado": "6",
+    "asignatura": "Inglés",
+    "tema": "Classroom & Rules",
+    "pregunta": "Read the sign: 'PLEASE WEAR YOUR TEAM UNIFORM BEFORE ENTERING THE FIELD.' Where can you see this sign?",
+    "opciones": [
+      "At the airport",
+      "In the school sports center",
+      "In the hospital",
+      "At the supermarket"
+    ],
+    "correcta": 1,
+    "explicacion": "El aviso indica vestirse con el uniforme del equipo antes de entrar a la cancha, típico de un centro deportivo o polideportivo escolar.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Inglés"
+  },
+  {
+    "id": "ICFES-06-SOC-04",
+    "grado": "6",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Convivencia y normas de juego limpio",
+    "pregunta": "Durante un partido del torneo escolar, el capitán del equipo rival comete una falta accidental pero pide disculpas y ayuda al jugador a levantarse. Esta acción demuestra:",
+    "opciones": [
+      "Falta de competitividad y cobardía deportiva.",
+      "Juego limpio (fair play) y empatía ciudadana.",
+      "Desconocimiento total de las reglas del árbitro.",
+      "Intención de perder el partido a propósito."
+    ],
+    "correcta": 1,
+    "explicacion": "El juego limpio y el respeto al adversario son valores fundamentales de la convivencia y la ciudadanía deportiva.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Competencias Ciudadanas 6.°"
+  },
+  {
+    "id": "ICFES-06-SOC-05",
+    "grado": "6",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Geografía colombiana",
+    "pregunta": "Colombia cuenta con costas en dos océanos diferentes. ¿Cuáles son estos océanos?",
+    "opciones": [
+      "Océano Atlántico y Océano Pacífico.",
+      "Océano Índico y Océano Glacial Ártico.",
+      "Océano Atlántico y Océano Índico.",
+      "Océano Pacífico y Océano Antártico."
+    ],
+    "correcta": 0,
+    "explicacion": "Colombia es el único país de América del Sur con costas sobre el Océano Pacífico y el Océano Atlántico (Mar Caribe).",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Ciencias Sociales"
+  },
+  {
+    "id": "ICFES-06-LEN-05",
+    "grado": "6",
+    "asignatura": "Lenguaje",
+    "tema": "Tipología textual - La Fábula",
+    "pregunta": "¿Cuál es la característica principal que distingue a una fábula de otros relatos narrativos?",
+    "opciones": [
+      "Presentar datos estadísticos y fórmulas matemáticas.",
+      "Tener personajes animales u objetos con actitudes humanas y dejar una moraleja.",
+      "Estar escrita exclusivamente en versos de quince sílabas sin rima.",
+      "Narrar hechos 100% verídicos comprobados en un laboratorio."
+    ],
+    "correcta": 1,
+    "explicacion": "La fábula utiliza la personificación de animales para transmitir una enseñanza o moraleja moral y pedagógica.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Lenguaje"
+  },
+  {
+    "id": "ICFES-06-CN-05",
+    "grado": "6",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Cadena trófica y productores",
+    "pregunta": "En un ecosistema terrestre, las plantas verdes son clasificadas como organismos autótrofos porque:",
+    "opciones": [
+      "Cazan insectos nocturnos para alimentarse.",
+      "Producen su propio alimento orgánico mediante la fotosíntesis utilizando luz solar.",
+      "Consumen exclusivamente hongos y bacterias del suelo.",
+      "Dependen de otros animales para obtener energía vital."
+    ],
+    "correcta": 1,
+    "explicacion": "Los productores o autótrofos sintetizan glucosa a partir de agua, dióxido de carbono y energía lumínica solar mediante la fotosíntesis.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 6.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-07-MAT-07",
+    "grado": "7",
+    "asignatura": "Matemáticas",
+    "tema": "Operaciones con números enteros",
+    "pregunta": "En un torneo de fútbol de invierno, la temperatura en la cancha a las 6:00 a.m. era de -4 °C. Para el mediodía subió 9 °C y en la noche bajó 3 °C. ¿Cuál es la temperatura final?",
+    "opciones": [
+      "+2 °C",
+      "+5 °C",
+      "-2 °C",
+      "+8 °C"
+    ],
+    "correcta": 0,
+    "explicacion": "-4 + 9 = +5 °C; luego +5 - 3 = +2 °C.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 7.° Matemáticas"
+  },
+  {
+    "id": "ICFES-07-MAT-08",
+    "grado": "7",
+    "asignatura": "Matemáticas",
+    "tema": "Proporcionalidad directa",
+    "pregunta": "Si un futbolista recorre 24 kilómetros en 3 entrenamientos de igual duración, ¿cuántos kilómetros recorrerá en 7 entrenamientos con la misma intensidad?",
+    "opciones": [
+      "48 km",
+      "56 km",
+      "64 km",
+      "70 km"
+    ],
+    "correcta": 1,
+    "explicacion": "Por entrenamiento recorre 24 / 3 = 8 km. En 7 entrenamientos: 7 * 8 = 56 km.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 7.° Matemáticas"
+  },
+  {
+    "id": "ICFES-07-LEN-04",
+    "grado": "7",
+    "asignatura": "Lenguaje",
+    "tema": "Conectores lógicos de causa y consecuencia",
+    "pregunta": "En la oración: 'El delantero no pudo jugar la final, ______ sufrió una molestia muscular en el calentamiento', el conector adecuado es:",
+    "opciones": [
+      "por lo tanto",
+      "sin embargo",
+      "ya que",
+      "a pesar de que"
+    ],
+    "correcta": 2,
+    "explicacion": "'Ya que' introduce la causa o justificación por la cual el delantero no disputó el partido.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Lenguaje"
+  },
+  {
+    "id": "ICFES-07-CN-04",
+    "grado": "7",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Sistema respiratorio y ejercicio",
+    "pregunta": "Durante una carrera intensa de 90 minutos, la frecuencia respiratoria del deportista aumenta considerablemente debido a que:",
+    "opciones": [
+      "El cuerpo necesita expulsar nitrógeno y absorber dióxido de carbono.",
+      "Las células musculares requieren más oxígeno (O₂) para producir energía (ATP) y eliminar CO₂.",
+      "Los pulmones necesitan llenarse de agua para regular la temperatura.",
+      "La sangre deja de circular por el corazón momentáneamente."
+    ],
+    "correcta": 1,
+    "explicacion": "La contracción muscular incrementa el consumo celular de O2 y la producción de CO2, lo que activa el centro respiratorio.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-07-SOC-03",
+    "grado": "7",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Ramas del poder público en Colombia",
+    "pregunta": "En la Constitución Política de Colombia, ¿cuál de las tres ramas del poder público se encarga de administrar justicia y hacer cumplir las leyes?",
+    "opciones": [
+      "La Rama Ejecutiva (Presidente y alcaldes).",
+      "La Rama Judicial (Cortes, tribunales y jueces).",
+      "La Rama Legislativa (Senado y Cámara de Representantes).",
+      "El Consejo Nacional Electoral."
+    ],
+    "correcta": 1,
+    "explicacion": "La Rama Judicial administra la justicia colombiana y resuelve conflictos legales entre ciudadanos y el Estado.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Competencias Ciudadanas 7.°"
+  },
+  {
+    "id": "ICFES-07-ING-01",
+    "grado": "7",
+    "asignatura": "Inglés",
+    "tema": "Past Simple",
+    "pregunta": "Choose the correct sentence: 'Last Sunday, our school team ______ the championship trophy.'",
+    "opciones": [
+      "win",
+      "won",
+      "winned",
+      "winning"
+    ],
+    "correcta": 1,
+    "explicacion": "El pasado simple del verbo irregular 'win' es 'won'.",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Inglés"
+  },
+  {
+    "id": "ICFES-07-ING-02",
+    "grado": "7",
+    "asignatura": "Inglés",
+    "tema": "Reading Comprehension",
+    "pregunta": "'Carlos drinks water every 15 minutes during training to stay hydrated.' Why does Carlos drink water?",
+    "opciones": [
+      "To win video games.",
+      "To maintain proper hydration during physical activity.",
+      "Because he is sleeping in the classroom.",
+      "To clean the stadium grass."
+    ],
+    "correcta": 1,
+    "explicacion": "El texto explica claramente 'to stay hydrated' (para mantenerse hidratado durante la actividad física).",
+    "dificultad": "Fácil",
+    "fuente": "Cuadernillo ICFES Saber 7.° Inglés"
+  },
+  {
+    "id": "ICFES-08-MAT-06",
+    "grado": "8",
+    "asignatura": "Matemáticas",
+    "tema": "Lenguaje algebraico y ecuaciones",
+    "pregunta": "En un estadio, el triple del número de goles marcados por el equipo local más 5 es igual a 26. ¿Cuántos goles marcó el equipo local?",
+    "opciones": [
+      "5 goles",
+      "7 goles",
+      "8 goles",
+      "9 goles"
+    ],
+    "correcta": 1,
+    "explicacion": "Planteando la ecuación: 3x + 5 = 26 -> 3x = 21 -> x = 7 goles.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 8.° Matemáticas"
+  },
+  {
+    "id": "ICFES-08-MAT-07",
+    "grado": "8",
+    "asignatura": "Matemáticas",
+    "tema": "Teorema de Pitágoras",
+    "pregunta": "Una cancha rectangular mide 40 metros de largo y 30 metros de ancho. ¿Cuánto mide la diagonal que une dos esquinas opuestas?",
+    "opciones": [
+      "50 metros",
+      "60 metros",
+      "70 metros",
+      "45 metros"
+    ],
+    "correcta": 0,
+    "explicacion": "Por Teorema de Pitágoras: d = √(40² + 30²) = √(1600 + 900) = √2500 = 50 metros.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Matemáticas"
+  },
+  {
+    "id": "ICFES-08-LEN-03",
+    "grado": "8",
+    "asignatura": "Lenguaje",
+    "tema": "Textos argumentativos - Tesis y argumentos",
+    "pregunta": "En un ensayo sobre la educación deportiva, el autor afirma: 'El deporte escolar debe ser obligatorio porque fomenta hábitos saludables, reduce el estrés y previene enfermedades crónicas'. Esta afirmación cumple el rol de:",
+    "opciones": [
+      "Conclusión retórica sin fundamento alguno.",
+      "Tesis defendida con sus correspondientes argumentos justificativos.",
+      "Una anécdota personal sin validez académica.",
+      "Un contraargumento en oposición al deporte."
+    ],
+    "correcta": 1,
+    "explicacion": "Contiene la postura central (tesis: obligatoriedad) sustentada por razones pedagógicas y de salud (argumentos).",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Lenguaje"
+  },
+  {
+    "id": "ICFES-08-CN-04",
+    "grado": "8",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Reproducción celular: Mitosis y Meiosis",
+    "pregunta": "Cuando un deportista sufre una herida leve en la piel durante una jugada y el tejido cicatriza al cabo de unos días, ¿qué proceso biológico genera las nuevas células epiteliales?",
+    "opciones": [
+      "La meiosis con reducción del número de cromosomas.",
+      "La mitosis celular, que genera células hijas genéticamente idénticas.",
+      "La fotosíntesis celular epidérmica.",
+      "La fermentación láctica anaeróbica."
+    ],
+    "correcta": 1,
+    "explicacion": "La mitosis es la división celular responsable del crecimiento y reparación de los tejidos somáticos en organismos multicelulares.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-08-SOC-03",
+    "grado": "8",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Mecanismos de participación ciudadana en Colombia",
+    "pregunta": "¿Cuál es el mecanismo establecido en la Constitución de 1991 mediante el cual los ciudadanos pueden votar para revocar el mandato de un alcalde o gobernador por incumplimiento de su programa de gobierno?",
+    "opciones": [
+      "La acción de tutela.",
+      "La revocatoria del mandato.",
+      "El plebiscito presidencial.",
+      "El cabildo abierto extraordinario."
+    ],
+    "correcta": 1,
+    "explicacion": "La revocatoria del mandato es el derecho político que permite a los electores dar por terminado el mandato conferido a un alcalde o gobernador.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Competencias Ciudadanas 8.°"
+  },
+  {
+    "id": "ICFES-08-ING-01",
+    "grado": "8",
+    "asignatura": "Inglés",
+    "tema": "Comparatives and Superlatives",
+    "pregunta": "Select the correct option: 'This stadium is ______ than the one in our hometown.'",
+    "opciones": [
+      "more big",
+      "bigger",
+      "biggest",
+      "the biggest"
+    ],
+    "correcta": 1,
+    "explicacion": "Para adjetivos cortos de una sílaba como 'big', el comparativo se forma duplicando la consonante y agregando '-er': 'bigger'.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Inglés"
+  },
+  {
+    "id": "ICFES-08-ING-02",
+    "grado": "8",
+    "asignatura": "Inglés",
+    "tema": "Modal Verbs (Obligation and Advice)",
+    "pregunta": "'All soccer players ______ respect the referee's decisions during the match.'",
+    "opciones": [
+      "must",
+      "can't",
+      "shouldn't",
+      "are not"
+    ],
+    "correcta": 0,
+    "explicacion": "'Must' expresa deber u obligación reglamentaria.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 8.° Inglés"
+  },
+  {
+    "id": "ICFES-09-MAT-04",
+    "grado": "9",
+    "asignatura": "Matemáticas",
+    "tema": "Sistemas de ecuaciones 2x2",
+    "pregunta": "Para la final escolar se vendieron 100 boletas en total entre adultos y niños. La boleta de adulto costaba $10.000 y la de niño $5.000. Si se recaudaron $700.000, ¿cuántas boletas de adulto se vendieron?",
+    "opciones": [
+      "30 boletas",
+      "40 boletas",
+      "50 boletas",
+      "60 boletas"
+    ],
+    "correcta": 1,
+    "explicacion": "x + y = 100 y 10000x + 5000y = 700000. Sustituyendo y = 100 - x: 10000x + 500000 - 5000x = 700000 -> 5000x = 200000 -> x = 40 adultos.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 9.° Matemáticas"
+  },
+  {
+    "id": "ICFES-09-MAT-05",
+    "grado": "9",
+    "asignatura": "Matemáticas",
+    "tema": "Función cuadrática y trayectorias",
+    "pregunta": "La trayectoria de un disparo de tiro libre sigue la función h(t) = -5t² + 20t, donde h es la altura en metros y t el tiempo en segundos. ¿En qué segundo alcanza su altura máxima?",
+    "opciones": [
+      "1 segundo",
+      "2 segundos",
+      "3 segundos",
+      "4 segundos"
+    ],
+    "correcta": 1,
+    "explicacion": "El vértice de una parábola -at² + bt ocurre en t = -b / (2a) = -20 / (2*(-5)) = 2 segundos.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 9.° Matemáticas"
+  },
+  {
+    "id": "ICFES-09-LEN-03",
+    "grado": "9",
+    "asignatura": "Lenguaje",
+    "tema": "Figuras literarias - Metáfora y Símil",
+    "pregunta": "En el comentario deportivo: 'El arquero voló como un felino bajo el arco y sus manos fueron una muralla infranqueable', las figuras retóricas presentes son, en su orden:",
+    "opciones": [
+      "Hipérbole e ironía.",
+      "Símil (comparación directa con 'como') y metáfora.",
+      "Personificación y pleonasmo.",
+      "Onomatopeya y elipsis."
+    ],
+    "correcta": 1,
+    "explicacion": "'Como un felino' usa el nexo explícito 'como' (símil), mientras que 'sus manos fueron una muralla' identifica un término con otro directamente (metáfora).",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 9.° Lenguaje"
+  },
+  {
+    "id": "ICFES-09-CN-03",
+    "grado": "9",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Leyes de la Genética Mendeliana",
+    "pregunta": "Si se cruzan dos plantas heterocigotas (Aa) para el color de la semilla, donde 'A' (amarillo) domina sobre 'a' (verde), ¿cuál es la probabilidad de obtener semillas verdes (aa)?",
+    "opciones": [
+      "100%",
+      "75%",
+      "50%",
+      "25%"
+    ],
+    "correcta": 3,
+    "explicacion": "En el cuadro de Punnett de Aa x Aa se obtienen: 1 AA (25%), 2 Aa (50%) y 1 aa (25%). El fenotipo recesivo representa el 25% (1/4).",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 9.° Ciencias Naturales"
+  },
+  {
+    "id": "ICFES-09-SOC-03",
+    "grado": "9",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Derechos Humanos y Constitución",
+    "pregunta": "¿Cuál es la herramienta jurídica creada por la Constitución de 1991 que cualquier persona puede interponer ante un juez para la protección inmediata de sus derechos fundamentales vulnerados?",
+    "opciones": [
+      "La Acción de Tutela.",
+      "El Juicio Político del Congreso.",
+      "El Derecho de Petición Mercantil.",
+      "La Demanda de Expropiación."
+    ],
+    "correcta": 0,
+    "explicacion": "La Acción de Tutela (Artículo 86 de la Constitución) garantiza la protección judicial inmediata de derechos fundamentales como la vida, salud y debido proceso.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Competencias Ciudadanas 9.°"
+  },
+  {
+    "id": "ICFES-09-ING-04",
+    "grado": "9",
+    "asignatura": "Inglés",
+    "tema": "First Conditional",
+    "pregunta": "'If the team ______ hard today, they ______ the match tomorrow.'",
+    "opciones": [
+      "trains / will win",
+      "trained / would won",
+      "train / winning",
+      "will train / wins"
+    ],
+    "correcta": 0,
+    "explicacion": "El primer condicional en inglés usa: If + presente simple ('trains'), resultado con will + infinitivo ('will win').",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 9.° Inglés"
+  },
+  {
+    "id": "ICFES-10-MAT-05",
+    "grado": "10",
+    "asignatura": "Matemáticas",
+    "tema": "Razones trigonométricas",
+    "pregunta": "Un reflector del estadio está ubicado a 30 metros de altura. Si proyecta un haz de luz hacia el centro del campo con un ángulo de elevación de 45°, ¿a qué distancia horizontal de la base del poste se encuentra el centro del campo?",
+    "opciones": [
+      "15 metros",
+      "30 metros",
+      "45 metros",
+      "60 metros"
+    ],
+    "correcta": 1,
+    "explicacion": "tan(45°) = altura / distancia = 1. Por lo tanto, distancia = altura = 30 metros.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 10.° Matemáticas"
+  },
+  {
+    "id": "ICFES-10-MAT-06",
+    "grado": "10",
+    "asignatura": "Matemáticas",
+    "tema": "Ley de Cosenos",
+    "pregunta": "En un triángulo con lados a = 5 m, b = 5 m y un ángulo comprendido C = 60°, ¿cuánto mide el lado opuesto c?",
+    "opciones": [
+      "3 m",
+      "5 m",
+      "7 m",
+      "10 m"
+    ],
+    "correcta": 1,
+    "explicacion": "Al tener dos lados iguales (5 m) y un ángulo de 60°, el triángulo es equilátero, por lo que el tercer lado mide exactamente 5 m (c² = 25 + 25 - 2(25)(0.5) = 25 -> c = 5).",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Matemáticas"
+  },
+  {
+    "id": "ICFES-10-CN-03",
+    "grado": "10",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Cinemática y Dinámica de Newton",
+    "pregunta": "Un balón de fútbol de 0.45 kg es pateado desde el reposo y adquiere una aceleración de 40 m/s². De acuerdo con la Segunda Ley de Newton (F = m · a), ¿cuál es la magnitud de la fuerza neta aplicada?",
+    "opciones": [
+      "12 N",
+      "18 N",
+      "25 N",
+      "45 N"
+    ],
+    "correcta": 1,
+    "explicacion": "F = m · a = 0.45 kg · 40 m/s² = 18 Newtons.",
+    "dificultad": "Difícil",
+    "fuente": "Cuadernillo ICFES Saber 10.° Ciencias Naturales / Física"
+  },
+  {
+    "id": "ICFES-10-CN-04",
+    "grado": "10",
+    "asignatura": "Ciencias Naturales",
+    "tema": "Química de gases y Ley de Boyle",
+    "pregunta": "Si un balón inflado se comprime a temperatura constante reduciendo su volumen a la mitad, ¿qué sucede con la presión interna del aire de acuerdo con la Ley de Boyle?",
+    "opciones": [
+      "La presión se reduce a la mitad.",
+      "La presión se duplica.",
+      "La presión permanece inalterada.",
+      "La presión cae a cero absoluto."
+    ],
+    "correcta": 1,
+    "explicacion": "La Ley de Boyle establece que a temperatura constante, la presión y el volumen son inversamente proporcionales (P1·V1 = P2·V2). Al reducir el volumen a la mitad, la presión se duplica.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Ciencias Naturales / Química"
+  },
+  {
+    "id": "ICFES-10-SOC-03",
+    "grado": "10",
+    "asignatura": "Ciencias Sociales",
+    "tema": "Economía y Ley de Oferta y Demanda",
+    "pregunta": "Si la demanda de entradas para la final de un campeonato nacional de fútbol se dispara masivamente mientras la capacidad del estadio se mantiene fija (oferta inelástica), ¿qué ocurrirá con el precio de equilibrio en el mercado?",
+    "opciones": [
+      "El precio de equilibrio tenderá a subir significativamente.",
+      "El precio caerá a cero y las entradas serán gratuitas.",
+      "La oferta se duplicará automáticamente de la noche a la mañana.",
+      "El precio no sufrirá ninguna alteración económica."
+    ],
+    "correcta": 0,
+    "explicacion": "Cuando la demanda supera con creces la oferta fija disponible, la escasez presiona el precio de mercado al alza.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Ciencias Sociales y Ciudadanas"
+  },
+  {
+    "id": "ICFES-10-LEN-03",
+    "grado": "10",
+    "asignatura": "Lenguaje",
+    "tema": "Lectura Crítica - Supuestos e inferencias",
+    "pregunta": "En una columna de opinión, el autor señala: 'Los triunfos efímeros no construyen legados institucionales; únicamente la inversión en semilleros juveniles garantiza la sostenibilidad deportiva'. ¿Cuál es el supuesto implícito del autor?",
+    "opciones": [
+      "Que no es necesario competir para ganar trofeos.",
+      "Que la formación a largo plazo en las bases es más valiosa y sostenible que victorias aisladas e inmediatas.",
+      "Que los torneos juveniles deberían cancelarse por falta de público.",
+      "Que el dinero no tiene ninguna relación con el rendimiento deportivo."
+    ],
+    "correcta": 1,
+    "explicacion": "El autor prioriza la estructura formativa y el desarrollo progresivo frente a resultados inmediatos coyunturales.",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Lectura Crítica"
+  },
+  {
+    "id": "ICFES-10-ING-03",
+    "grado": "10",
+    "asignatura": "Inglés",
+    "tema": "Passive Voice in Sports News",
+    "pregunta": "Choose the correct passive voice sentence: 'The winning goal ______ by the star striker in the 90th minute.'",
+    "opciones": [
+      "was scored",
+      "scores",
+      "is scoring",
+      "were score"
+    ],
+    "correcta": 0,
+    "explicacion": "La voz pasiva en pasado para sujeto singular ('The winning goal') requiere 'was' + participio pasado ('was scored').",
+    "dificultad": "Medio",
+    "fuente": "Cuadernillo ICFES Saber 10.° Inglés"
+  }
+]

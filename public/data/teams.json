@@ -1,0 +1,542 @@
+[
+  {
+    "id": "colombia",
+    "name": "Colombia",
+    "code": "CO",
+    "flag": "🇨🇴",
+    "image": "assets/team_colombia.jpg",
+    "stars": "James Rodríguez & Luis Díaz",
+    "primaryColor": "#FCD116",
+    "secondaryColor": "#003893",
+    "accentColor": "#CE1126",
+    "description": "La Tricolor con su magia cafetera, garra y talento. ¡Elige a tu figura favorita y lleva a Colombia a la cima!",
+    "federation": "FCF",
+    "rating": 91,
+    "position": "CAM",
+    "starName": "JAMES",
+    "players": [
+      {
+        "name": "James Rodríguez",
+        "shortName": "JAMES",
+        "number": 10,
+        "rating": 91,
+        "pos": "CAM",
+        "role": "Mediapunta",
+        "avatar": "⭐",
+        "stats": {
+          "pac": 85,
+          "sho": 88,
+          "pas": 94,
+          "dri": 90,
+          "def": 76,
+          "phy": 82
+        },
+        "image": "assets/players/col_james.jpg"
+      },
+      {
+        "name": "Luis Díaz",
+        "shortName": "LUIS DÍAZ",
+        "number": 7,
+        "rating": 88,
+        "pos": "LW",
+        "role": "Delantero",
+        "avatar": "⚡",
+        "stats": {
+          "pac": 92,
+          "sho": 84,
+          "pas": 80,
+          "dri": 89,
+          "def": 45,
+          "phy": 78
+        },
+        "image": "assets/players/col_diaz.jpg"
+      },
+      {
+        "name": "Radamel Falcao",
+        "shortName": "FALCAO",
+        "number": 9,
+        "rating": 86,
+        "pos": "ST",
+        "role": "Delantero",
+        "avatar": "🐯",
+        "stats": {
+          "pac": 80,
+          "sho": 89,
+          "pas": 75,
+          "dri": 81,
+          "def": 48,
+          "phy": 84
+        },
+        "image": "assets/players/col_falcao.jpg"
+      },
+      {
+        "name": "Richard Ríos",
+        "shortName": "RÍOS",
+        "number": 6,
+        "rating": 85,
+        "pos": "CM",
+        "role": "Mediocampista",
+        "avatar": "🔥",
+        "stats": {
+          "pac": 84,
+          "sho": 78,
+          "pas": 85,
+          "dri": 87,
+          "def": 79,
+          "phy": 83
+        },
+        "image": "assets/players/col_rios.jpg"
+      },
+      {
+        "name": "Daniel Muñoz",
+        "shortName": "MUÑOZ",
+        "number": 21,
+        "rating": 84,
+        "pos": "RB",
+        "role": "Defensa",
+        "avatar": "🛡️",
+        "stats": {
+          "pac": 86,
+          "sho": 70,
+          "pas": 78,
+          "dri": 80,
+          "def": 83,
+          "phy": 85
+        },
+        "image": "assets/players/col_munoz.jpg"
+      }
+    ]
+  },
+  {
+    "id": "argentina",
+    "name": "Argentina",
+    "code": "AR",
+    "flag": "🇦🇷",
+    "image": "assets/team_argentina.jpg",
+    "stars": "Lionel Messi & Di María",
+    "primaryColor": "#75AADB",
+    "secondaryColor": "#FFFFFF",
+    "accentColor": "#F6B40E",
+    "description": "Una selección llena de talento, técnica y pasión. ¡Elige a tu jugador favorito y lleva a Argentina a la victoria!",
+    "federation": "AFA",
+    "rating": 93,
+    "position": "RW",
+    "starName": "MESSI",
+    "players": [
+      {
+        "name": "Lionel Messi",
+        "shortName": "MESSI",
+        "number": 10,
+        "rating": 93,
+        "pos": "RW",
+        "role": "Delantero",
+        "avatar": "👑",
+        "stats": {
+          "pac": 85,
+          "sho": 88,
+          "pas": 94,
+          "dri": 96,
+          "def": 38,
+          "phy": 72
+        },
+        "image": "assets/players/arg_messi.jpg"
+      },
+      {
+        "name": "Enzo Fernández",
+        "shortName": "ENZO FERNÁNDEZ",
+        "number": 24,
+        "rating": 88,
+        "pos": "CM",
+        "role": "Mediocampista",
+        "avatar": "🎯",
+        "stats": {
+          "pac": 78,
+          "sho": 76,
+          "pas": 85,
+          "dri": 84,
+          "def": 85,
+          "phy": 83
+        },
+        "image": "assets/players/arg_enzo.jpg"
+      },
+      {
+        "name": "Julián Álvarez",
+        "shortName": "JULIÁN ÁLVAREZ",
+        "number": 9,
+        "rating": 87,
+        "pos": "ST",
+        "role": "Delantero",
+        "avatar": "🕷️",
+        "stats": {
+          "pac": 89,
+          "sho": 87,
+          "pas": 80,
+          "dri": 86,
+          "def": 52,
+          "phy": 76
+        },
+        "image": "assets/players/arg_julian.jpg"
+      },
+      {
+        "name": "Nicolás Tagliafico",
+        "shortName": "TAGLIAFICO",
+        "number": 3,
+        "rating": 84,
+        "pos": "LB",
+        "role": "Defensa",
+        "avatar": "🛡️",
+        "stats": {
+          "pac": 81,
+          "sho": 56,
+          "pas": 74,
+          "dri": 76,
+          "def": 85,
+          "phy": 78
+        },
+        "image": "assets/players/arg_tagliafico.jpg"
+      },
+      {
+        "name": "Rodrigo De Paul",
+        "shortName": "RODRIGO DE PAUL",
+        "number": 7,
+        "rating": 86,
+        "pos": "CM",
+        "role": "Mediocampista",
+        "avatar": "⚡",
+        "stats": {
+          "pac": 78,
+          "sho": 77,
+          "pas": 83,
+          "dri": 85,
+          "def": 76,
+          "phy": 82
+        },
+        "image": "assets/players/arg_depaul.jpg"
+      }
+    ]
+  },
+  {
+    "id": "francia",
+    "name": "Francia",
+    "code": "FR",
+    "flag": "🇫🇷",
+    "image": "assets/team_francia.jpg",
+    "stars": "Kylian Mbappé & Griezmann",
+    "primaryColor": "#002395",
+    "secondaryColor": "#FFFFFF",
+    "accentColor": "#ED2939",
+    "description": "Les Bleus con su velocidad arrolladora y potencia técnica. ¡Elige a tu estrella y conquista la gloria!",
+    "federation": "FFF",
+    "rating": 92,
+    "position": "ST",
+    "starName": "MBAPPÉ",
+    "players": [
+      {
+        "name": "Kylian Mbappé",
+        "shortName": "MBAPPÉ",
+        "number": 10,
+        "rating": 92,
+        "pos": "ST",
+        "role": "Delantero",
+        "avatar": "🚀",
+        "stats": {
+          "pac": 97,
+          "sho": 90,
+          "pas": 82,
+          "dri": 92,
+          "def": 40,
+          "phy": 78
+        },
+        "image": "assets/players/fra_mbappe.jpg"
+      },
+      {
+        "name": "Antoine Griezmann",
+        "shortName": "GRIEZMANN",
+        "number": 7,
+        "rating": 89,
+        "pos": "CAM",
+        "role": "Mediapunta",
+        "avatar": "🪄",
+        "stats": {
+          "pac": 80,
+          "sho": 87,
+          "pas": 89,
+          "dri": 88,
+          "def": 62,
+          "phy": 74
+        },
+        "image": "assets/players/fra_griezmann.jpg"
+      },
+      {
+        "name": "Eduardo Camavinga",
+        "shortName": "CAMAVINGA",
+        "number": 6,
+        "rating": 87,
+        "pos": "CM",
+        "role": "Mediocampista",
+        "avatar": "⚡",
+        "stats": {
+          "pac": 82,
+          "sho": 74,
+          "pas": 84,
+          "dri": 86,
+          "def": 84,
+          "phy": 82
+        },
+        "image": "assets/players/fra_camavinga.jpg"
+      },
+      {
+        "name": "Theo Hernández",
+        "shortName": "T. HERNÁNDEZ",
+        "number": 22,
+        "rating": 86,
+        "pos": "LB",
+        "role": "Defensa",
+        "avatar": "💨",
+        "stats": {
+          "pac": 93,
+          "sho": 72,
+          "pas": 77,
+          "dri": 82,
+          "def": 81,
+          "phy": 86
+        },
+        "image": "assets/players/fra_hernandez.jpg"
+      },
+      {
+        "name": "Ousmane Dembélé",
+        "shortName": "DEMBÉLÉ",
+        "number": 11,
+        "rating": 86,
+        "pos": "RW",
+        "role": "Extremo",
+        "avatar": "🎯",
+        "stats": {
+          "pac": 93,
+          "sho": 78,
+          "pas": 81,
+          "dri": 89,
+          "def": 36,
+          "phy": 64
+        },
+        "image": "assets/players/fra_dembele.jpg"
+      }
+    ]
+  },
+  {
+    "id": "portugal",
+    "name": "Portugal",
+    "code": "PT",
+    "flag": "🇵🇹",
+    "image": "assets/team_portugal.jpg",
+    "stars": "Cristiano Ronaldo & Bruno F.",
+    "primaryColor": "#DA291C",
+    "secondaryColor": "#046A38",
+    "accentColor": "#FFD700",
+    "description": "La Seleção das Quinas, liderada por leyendas y juventud estelar. ¡Haz historia en la Copa del Saber!",
+    "federation": "FPF",
+    "rating": 90,
+    "position": "ST",
+    "starName": "CRISTIANO",
+    "players": [
+      {
+        "name": "Cristiano Ronaldo",
+        "shortName": "CRISTIANO",
+        "number": 7,
+        "rating": 90,
+        "pos": "ST",
+        "role": "Delantero",
+        "avatar": "🐐",
+        "stats": {
+          "pac": 88,
+          "sho": 93,
+          "pas": 82,
+          "dri": 87,
+          "def": 38,
+          "phy": 79
+        },
+        "image": "assets/players/por_ronaldo.jpg"
+      },
+      {
+        "name": "Bruno Fernandes",
+        "shortName": "B. FERNANDES",
+        "number": 8,
+        "rating": 88,
+        "pos": "CAM",
+        "role": "Mediocampista",
+        "avatar": "🎯",
+        "stats": {
+          "pac": 75,
+          "sho": 86,
+          "pas": 90,
+          "dri": 84,
+          "def": 70,
+          "phy": 78
+        },
+        "image": "assets/players/por_bruno.jpg"
+      },
+      {
+        "name": "Bernardo Silva",
+        "shortName": "B. SILVA",
+        "number": 10,
+        "rating": 88,
+        "pos": "RW",
+        "role": "Mediocampista",
+        "avatar": "🎩",
+        "stats": {
+          "pac": 78,
+          "sho": 79,
+          "pas": 88,
+          "dri": 92,
+          "def": 65,
+          "phy": 72
+        },
+        "image": "assets/players/por_bernardo.jpg"
+      },
+      {
+        "name": "Rúben Dias",
+        "shortName": "RÚBEN DIAS",
+        "number": 3,
+        "rating": 89,
+        "pos": "CB",
+        "role": "Defensa",
+        "avatar": "🛡️",
+        "stats": {
+          "pac": 68,
+          "sho": 42,
+          "pas": 72,
+          "dri": 70,
+          "def": 90,
+          "phy": 88
+        },
+        "image": "assets/players/por_dias.jpg"
+      },
+      {
+        "name": "Rafael Leão",
+        "shortName": "LEÃO",
+        "number": 17,
+        "rating": 87,
+        "pos": "LW",
+        "role": "Extremo",
+        "avatar": "🏄",
+        "stats": {
+          "pac": 93,
+          "sho": 82,
+          "pas": 78,
+          "dri": 88,
+          "def": 35,
+          "phy": 78
+        },
+        "image": "assets/players/por_leao.jpg"
+      }
+    ]
+  },
+  {
+    "id": "alemania",
+    "name": "Alemania",
+    "code": "DE",
+    "flag": "🇩🇪",
+    "image": "assets/team_alemania.jpg",
+    "stars": "Toni Kroos & Jamal Musiala",
+    "primaryColor": "#1A1A1A",
+    "secondaryColor": "#FFFFFF",
+    "accentColor": "#FFCC00",
+    "description": "Die Mannschaft con su precisión táctica, disciplina y maestría. ¡Comanda el campo hacia el triunfo!",
+    "federation": "DFB",
+    "rating": 89,
+    "position": "CM",
+    "starName": "KROOS",
+    "players": [
+      {
+        "name": "Toni Kroos",
+        "shortName": "KROOS",
+        "number": 8,
+        "rating": 89,
+        "pos": "CM",
+        "role": "Mediocampista",
+        "avatar": "🎯",
+        "stats": {
+          "pac": 68,
+          "sho": 82,
+          "pas": 94,
+          "dri": 83,
+          "def": 74,
+          "phy": 72
+        },
+        "image": "assets/players/ger_kroos.jpg"
+      },
+      {
+        "name": "Jamal Musiala",
+        "shortName": "MUSIALA",
+        "number": 10,
+        "rating": 88,
+        "pos": "CAM",
+        "role": "Mediocampista",
+        "avatar": "✨",
+        "stats": {
+          "pac": 86,
+          "sho": 80,
+          "pas": 83,
+          "dri": 93,
+          "def": 42,
+          "phy": 65
+        },
+        "image": "assets/players/ger_musiala.jpg"
+      },
+      {
+        "name": "Florian Wirtz",
+        "shortName": "WIRTZ",
+        "number": 17,
+        "rating": 88,
+        "pos": "CAM",
+        "role": "Mediocampista",
+        "avatar": "💎",
+        "stats": {
+          "pac": 83,
+          "sho": 81,
+          "pas": 87,
+          "dri": 90,
+          "def": 52,
+          "phy": 68
+        },
+        "image": "assets/players/ger_wirtz.jpg"
+      },
+      {
+        "name": "Antonio Rüdiger",
+        "shortName": "RÜDIGER",
+        "number": 2,
+        "rating": 87,
+        "pos": "CB",
+        "role": "Defensa",
+        "avatar": "🛡️",
+        "stats": {
+          "pac": 84,
+          "sho": 55,
+          "pas": 72,
+          "dri": 68,
+          "def": 87,
+          "phy": 88
+        },
+        "image": "assets/players/ger_rudiger.jpg"
+      },
+      {
+        "name": "Leroy Sané",
+        "shortName": "SANÉ",
+        "number": 19,
+        "rating": 85,
+        "pos": "RW",
+        "role": "Extremo",
+        "avatar": "⚡",
+        "stats": {
+          "pac": 91,
+          "sho": 83,
+          "pas": 80,
+          "dri": 87,
+          "def": 40,
+          "phy": 72
+        },
+        "image": "assets/players/ger_sane.jpg"
+      }
+    ]
+  }
+]
