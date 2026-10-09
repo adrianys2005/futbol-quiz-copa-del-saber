@@ -1,0 +1,38 @@
+# ==========================================
+# .gitignore - Fútbol Quiz: La Copa del Saber
+# ==========================================
+
+# Dependencias de Node.js
+node_modules/
+
+# Archivos de entorno y credenciales locales
+.env
+.env.local
+*.env
+
+# Cuadernillos PDF originales de 102 MB
+# (Las preguntas ya están extraídas y estructuradas en data/questions.json)
+Cuadernillos de preguntas/
+
+# Carpetas de subida temporal de fotos brutas
+Jugadores */
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Archivos de depuración y logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Configuraciones locales de editores
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

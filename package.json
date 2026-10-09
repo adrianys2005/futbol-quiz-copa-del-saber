@@ -1,0 +1,24 @@
+{
+  "name": "futbol-quiz-copa-del-saber",
+  "version": "1.0.0",
+  "description": "Fútbol Quiz: La Copa del Saber - Videojuego educativo de preguntas académicas y fútbol en tiempo real",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "futbol",
+    "quiz",
+    "educativo",
+    "icfes",
+    "socket.io",
+    "juego"
+  ],
+  "author": "Fútbol Quiz Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  }
+}
