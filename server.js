@@ -296,10 +296,29 @@ io.on('connection', (socket) => {
       history: []
     };
 
-    io.to(room.code).emit('match_started', {
-      room,
-      currentQuestion: getSanitizedQuestion(room.matchState.questions[0])
-    });
+    const firstQuestion = room.matchState.questions[0];
+
+    // Emit match_started with question ONLY to the active player (host)
+    // The guest (waiting player) receives question: null to prevent seeing/spoiling questions
+    if (room.players.host?.id) {
+      io.to(room.players.host.id).emit('match_started', {
+        room,
+        isMyTurn: true,
+        currentQuestion: getSanitizedQuestion(firstQuestion),
+        activePlayerRole: 'host',
+        activePlayerName: room.players.host.name
+      });
+    }
+
+    if (room.players.guest?.id) {
+      io.to(room.players.guest.id).emit('match_started', {
+        room,
+        isMyTurn: false,
+        currentQuestion: null,
+        activePlayerRole: 'host',
+        activePlayerName: room.players.host.name
+      });
+    }
   }
 
   function getQuestionTimeLimit(q) {
@@ -360,7 +379,7 @@ io.on('connection', (socket) => {
     const { answerIndex } = data;
     const match = room.matchState;
 
-    // Verify it is this player's turn to answer
+    // Verify it is strictly this player's turn to answer
     if (match.turn !== role) return;
 
     const currentQ = match.questions[match.currentQuestionIndex];
@@ -373,14 +392,14 @@ io.on('connection', (socket) => {
     let goalScoredBy = null;
 
     if (isCorrect) {
-      // Award academic points
+      // Award academic points to active player
       room.players[role].academicPoints += 100;
       match.recovererFailed = false;
       match.failedAttemptsInTurn = 0;
 
       // Ball Movement:
-      // Host attacks towards position 6 (Guest's goal). Correct moves +1.
-      // Guest attacks towards position 0 (Host's goal). Correct moves -1.
+      // Host attacks towards position 6. Correct moves +1.
+      // Guest attacks towards position 0. Correct moves -1.
       if (role === 'host') {
         match.ballPosition += 1;
         if (match.ballPosition >= 6) {
@@ -404,44 +423,27 @@ io.on('connection', (socket) => {
           eventType = 'advance';
         }
       }
-      // Possession continues or alternates after goal
-      match.possession = goalScoredBy ? (goalScoredBy === 'host' ? 'guest' : 'host') : role;
-      match.turn = match.possession;
+
+      // Regla de turno: Si responde correctamente, CONTINÚA jugando (conserva el turno).
+      // Si anotó gol, saca del medio el equipo que recibió el gol.
+      if (goalScoredBy) {
+        match.possession = goalScoredBy === 'host' ? 'guest' : 'host';
+        match.turn = match.possession;
+      } else {
+        // Mantiene el turno el jugador que acertó
+        match.possession = role;
+        match.turn = role;
+      }
 
     } else {
       // INCORRECT ANSWER:
-      // RF-011: Transfer opportunity to rival.
-      // RF-012: If rival also answers incorrectly -> original recoverer recovers opportunity.
-      // If recoverer fails again -> ball moves backward one position.
-      if (match.failedAttemptsInTurn === 0) {
-        // First failure: Interception by rival
-        eventType = 'intercept';
-        const rival = role === 'host' ? 'guest' : 'host';
-        match.turn = rival;
-        match.failedAttemptsInTurn = 1;
-      } else if (match.failedAttemptsInTurn === 1) {
-        // Rival also failed! Original team recovers
-        eventType = 'recovered';
-        const original = role === 'host' ? 'guest' : 'host';
-        match.turn = original;
-        match.failedAttemptsInTurn = 2;
-        match.recovererFailed = true;
-      } else {
-        // Recoverer failed again! Ball moves backward one position (retreat toward own goal)
-        eventType = 'retreat';
-        if (role === 'host') {
-          // Host retreats towards 0
-          match.ballPosition = Math.max(1, match.ballPosition - 1);
-        } else {
-          // Guest retreats towards 6
-          match.ballPosition = Math.min(5, match.ballPosition + 1);
-        }
-        // Change turn to break infinite loop
-        match.turn = role === 'host' ? 'guest' : 'host';
-        match.possession = match.turn;
-        match.failedAttemptsInTurn = 0;
-        match.recovererFailed = false;
-      }
+      // Regla de turno solicitada: si se equivoca, le toca esperar a que su oponente responda.
+      // El balón no avanza hacia el arco rival; pasa el turno al oponente.
+      eventType = 'intercept';
+      const rival = role === 'host' ? 'guest' : 'host';
+      match.turn = rival;
+      match.possession = rival;
+      match.failedAttemptsInTurn = 1;
     }
 
     // Check Match Win Condition
@@ -454,20 +456,24 @@ io.on('connection', (socket) => {
       room.status = 'finished';
     }
 
-    // Advance to next question
+    // Advance index to guarantee the next turn gets a new, unused question
     match.currentQuestionIndex = (match.currentQuestionIndex + 1) % match.questions.length;
     const nextQ = match.questions[match.currentQuestionIndex];
 
-    io.to(room.code).emit('round_result', {
+    const hostSocketId = room.players.host?.id;
+    const guestSocketId = room.players.guest?.id;
+    const activeSocketId = role === 'host' ? hostSocketId : guestSocketId;
+    const waitingSocketId = role === 'host' ? guestSocketId : hostSocketId;
+
+    const baseResult = {
       answeredBy: role,
+      answeredByName: room.players[role].name,
       isCorrect,
-      selectedAnswer: answerIndex,
-      correctAnswer: currentQ.correcta,
-      explanation,
       eventType,
       goalScoredBy,
       ballPosition: match.ballPosition,
       nextTurn: match.turn,
+      nextTurnPlayerName: room.players[match.turn].name,
       scores: {
         host: room.players.host.score,
         guest: room.players.guest.score
@@ -476,10 +482,63 @@ io.on('connection', (socket) => {
         host: room.players.host.academicPoints,
         guest: room.players.guest.academicPoints
       },
-      nextQuestion: getSanitizedQuestion(nextQ),
       matchWinner,
       status: room.status
-    });
+    };
+
+    // 1. Send detailed result to the active player who just answered
+    if (activeSocketId) {
+      io.to(activeSocketId).emit('round_result', {
+        ...baseResult,
+        isMyAnswer: true,
+        selectedAnswer: answerIndex,
+        correctAnswer: currentQ.correcta,
+        explanation: explanation
+      });
+    }
+
+    // 2. Send privacy-protected result to the waiting rival
+    // (Notice: selectedAnswer, correctAnswer and explanation are omitted so rival cannot memorize it)
+    if (waitingSocketId) {
+      io.to(waitingSocketId).emit('round_result', {
+        ...baseResult,
+        isMyAnswer: false,
+        selectedAnswer: null,
+        correctAnswer: null,
+        explanation: null
+      });
+    }
+
+    // 3. After feedback popup delay (2.5s), send the next turn event with the new question ONLY to the next active player
+    if (!matchWinner) {
+      setTimeout(() => {
+        const currentTurnRole = match.turn;
+        const currentActiveSocketId = currentTurnRole === 'host' ? hostSocketId : guestSocketId;
+        const currentWaitingSocketId = currentTurnRole === 'host' ? guestSocketId : hostSocketId;
+
+        // Next active player receives the new question
+        if (currentActiveSocketId) {
+          io.to(currentActiveSocketId).emit('next_turn_ready', {
+            isMyTurn: true,
+            question: getSanitizedQuestion(nextQ),
+            turn: currentTurnRole,
+            activePlayerName: room.players[currentTurnRole].name,
+            ballPosition: match.ballPosition
+          });
+        }
+
+        // Waiting player receives turn notification WITHOUT the question
+        if (currentWaitingSocketId) {
+          io.to(currentWaitingSocketId).emit('next_turn_ready', {
+            isMyTurn: false,
+            question: null,
+            turn: currentTurnRole,
+            activePlayerName: room.players[currentTurnRole].name,
+            ballPosition: match.ballPosition
+          });
+        }
+      }, 2500);
+    }
   });
 
   // Disconnection

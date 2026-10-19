@@ -1675,6 +1675,109 @@ main.app-viewport {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Caja de Espera por Turno del Rival en Multijugador (Privacidad de Preguntas) */
+.rival-waiting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 20px;
+  background: radial-gradient(circle at center, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.98));
+  border: 2px dashed rgba(245, 158, 11, 0.45);
+  border-radius: 18px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 0.4s ease;
+}
+
+.rival-waiting-container.hidden {
+  display: none !important;
+}
+
+.rival-waiting-radar {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.radar-pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.15);
+  border: 2px solid rgba(245, 158, 11, 0.7);
+  animation: radar-ping 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes radar-ping {
+  0% {
+    transform: scale(0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.radar-ball {
+  font-size: 2.4rem;
+  z-index: 2;
+  filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.8));
+  animation: bounce 1.4s infinite;
+}
+
+.rival-waiting-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(245, 158, 11, 0.18);
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  color: #fbbf24;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 4px 14px;
+  border-radius: 9999px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.rival-waiting-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #f8fafc;
+  margin: 0 0 8px 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.rival-waiting-desc {
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: #94a3b8;
+  max-width: 520px;
+  margin: 0 0 16px 0;
+}
+
+.rival-waiting-hint {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 6px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.rival-waiting-hint span {
+  display: inline-block;
+}
+
 .question-body {
   font-size: 1.15rem;
   line-height: 1.5;

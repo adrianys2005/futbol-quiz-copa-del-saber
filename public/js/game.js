@@ -714,6 +714,10 @@
         handleMultiRoundResult(data);
       });
 
+      state.socket.on('next_turn_ready', (data) => {
+        handleMultiNextTurnReady(data);
+      });
+
       state.socket.on('player_disconnected', (data) => {
         alert(data.message);
         endCurrentMatch();
@@ -1552,6 +1556,18 @@
     state.match.canAnswer = false;
     clearInterval(state.match.timerId);
 
+    // En Multijugador Online: emitir respuesta al servidor WebSocket
+    if (state.isMultiplayer && state.socket) {
+      const btns = document.querySelectorAll('.answer-option-btn');
+      btns.forEach(btn => {
+        btn.disabled = true;
+      });
+      state.socket.emit('submit_answer', {
+        answerIndex: selectedIndex
+      });
+      return;
+    }
+
     const q = state.match.currentQuestion;
     const isCorrect = selectedIndex === q.correcta;
 
@@ -1745,7 +1761,7 @@
     state.isMultiplayer = true;
     state.match.active = true;
     state.match.maxGoals = data.room.settings.maxGoals;
-    state.match.timerSec = 60; // 1 minuto
+    state.match.timerSec = 60; // 1 minuto base
 
     // En multijugador online no se puede pausar, solo cancelar
     const btnPause = document.getElementById('btn-pause-match');
@@ -1768,104 +1784,162 @@
       updateBallPositionUI(3);
       updatePitchPlayersUI(3, 'idle');
       switchView('match');
-      renderMultiQuestion(data.currentQuestion, data.room.matchState.turn);
+
+      const isMyTurn = data.isMyTurn !== undefined ? data.isMyTurn : (state.myRole === data.room.matchState?.turn);
+      renderMultiQuestion(data.currentQuestion, isMyTurn, data.activePlayerName || data.room.players.host.name);
     });
   }
 
-  function renderMultiQuestion(q, turn) {
+  function renderMultiQuestion(q, isMyTurn, activePlayerName = 'Tu compañero') {
     clearInterval(state.match.timerId);
     document.getElementById('match-explanation-box').style.display = 'none';
 
-    const btns = document.querySelectorAll('.answer-option-btn');
-    btns.forEach(b => {
-      b.className = 'answer-option-btn';
-      b.disabled = false;
-    });
+    const waitingBox = document.getElementById('rival-turn-waiting-box');
+    const questionText = document.getElementById('match-question-text');
+    const answersGrid = document.getElementById('match-answers-grid');
+    const badge = document.getElementById('match-possession-badge');
+    const timerBadge = document.getElementById('badge-question-time');
+    const timerBar = document.getElementById('match-timer-bar');
 
-    state.match.currentQuestion = q;
-    document.getElementById('badge-question-grade').textContent = `${q.grado}.º Grado`;
-    document.getElementById('badge-question-subject').textContent = q.asignatura;
-    document.getElementById('badge-question-diff').textContent = q.dificultad || 'Fácil';
-    document.getElementById('match-question-text').textContent = q.pregunta;
-
-    btns.forEach(btn => {
-      const idx = parseInt(btn.dataset.index, 10);
-      btn.querySelector('.answer-text').textContent = q.opciones[idx] || '';
-    });
-
-    state.match.turn = turn;
-    const isMyTurn = (state.myRole === turn);
     state.match.canAnswer = isMyTurn;
+    state.match.turn = isMyTurn ? 'p1' : 'p2';
 
     updateScoreboardUI();
     updatePitchPlayersUI(state.match.ballPosition, 'idle');
 
-    const badge = document.getElementById('match-possession-badge');
-    badge.textContent = isMyTurn ? 'TU TURNO DE RESPONDER' : 'TURNO DEL RIVAL';
-    badge.style.color = isMyTurn ? 'var(--accent-green)' : 'var(--warning-amber)';
+    if (isMyTurn && q) {
+      // 1. MI TURNO: Mostrar pregunta, opciones y activar temporizador
+      if (waitingBox) waitingBox.classList.add('hidden');
+      if (questionText) questionText.style.display = 'block';
+      if (answersGrid) answersGrid.style.display = 'grid';
 
-    if (isMyTurn) {
-      showPlayAlert('¡Es tu turno! Responde para realizar el pase y avanzar ⚽', 'turn');
+      const btns = document.querySelectorAll('.answer-option-btn');
+      btns.forEach(b => {
+        b.className = 'answer-option-btn';
+        b.disabled = false;
+      });
+
+      state.match.currentQuestion = q;
+      document.getElementById('badge-question-grade').textContent = `${q.grado}.º Grado`;
+      document.getElementById('badge-question-subject').textContent = q.asignatura;
+      document.getElementById('badge-question-diff').textContent = q.dificultad || 'Fácil';
+      questionText.textContent = q.pregunta;
+
+      btns.forEach(btn => {
+        const idx = parseInt(btn.dataset.index, 10);
+        btn.querySelector('.answer-text').textContent = q.opciones[idx] || '';
+      });
+
+      badge.textContent = '⚽ TU TURNO DE RESPONDER';
+      badge.style.borderColor = 'var(--accent-green)';
+      badge.style.color = 'var(--accent-green)';
+
+      showPlayAlert('¡Tienes la posesión del balón! Responde para avanzar hacia el arco rival ⚽', 'turn');
       const timeForQ = q.tiempoLimite || getQuestionTimeLimit(q);
       startQuestionTimer(timeForQ);
+
     } else {
-      showPlayAlert('El contrincante está respondiendo la pregunta...', 'warning');
-      document.getElementById('badge-question-time').textContent = 'Esperando rival...';
-      const timerBar = document.getElementById('match-timer-bar');
+      // 2. TURNO DEL RIVAL: Ocultar estrictamente el contenido de la pregunta para garantizar privacidad
+      if (questionText) questionText.style.display = 'none';
+      if (answersGrid) answersGrid.style.display = 'none';
+      if (waitingBox) {
+        waitingBox.classList.remove('hidden');
+        const rivalTitle = document.getElementById('rival-waiting-title');
+        const rivalDesc = document.getElementById('rival-waiting-desc');
+        if (rivalTitle) rivalTitle.textContent = `¡${activePlayerName} tiene el balón!`;
+        if (rivalDesc) rivalDesc.textContent = `${activePlayerName} está pensando y respondiendo su pregunta en secreto. Si acierta continuará avanzando; si falla, ¡el balón pasará a tus pies!`;
+      }
+
+      badge.textContent = `🛡️ TURNO DE ${activePlayerName.toUpperCase()}`;
+      badge.style.borderColor = 'var(--warning-amber)';
+      badge.style.color = 'var(--warning-amber)';
+
+      if (timerBadge) timerBadge.textContent = '⏱️ Esperando jugada...';
       if (timerBar) timerBar.style.width = '100%';
+
+      showPlayAlert(`Atención defensiva: ${activePlayerName} está ejecutando su jugada...`, 'warning');
     }
   }
 
   function handleMultiRoundResult(data) {
     clearInterval(state.match.timerId);
 
-    // Show answers on buttons
-    const btns = document.querySelectorAll('.answer-option-btn');
-    btns.forEach(btn => {
-      const idx = parseInt(btn.dataset.index, 10);
-      btn.disabled = true;
-      if (idx === data.correctAnswer) btn.classList.add('correct');
-      if (idx === data.selectedAnswer && !data.isCorrect) btn.classList.add('wrong');
-    });
-
-    // Show explanation
-    document.getElementById('match-explanation-box').style.display = 'block';
-    document.getElementById('match-explanation-text').textContent = data.explanation;
-
-    // Update ball, players animation & scores
-    updateBallPositionUI(data.ballPosition);
+    // Actualizar marcador y posición sincronizada del balón en ambos clientes
     state.match.ballPosition = data.ballPosition;
     state.match.scoreP1 = data.scores.host;
     state.match.scoreP2 = data.scores.guest;
+    updateBallPositionUI(data.ballPosition);
     updateScoreboardUI();
 
-    if (data.isCorrect) {
-      window.sounds.playCorrect();
-      window.sounds.playPass();
-      showAnswerFeedback(true, '¡RESPUESTA CORRECTA!', '¡Pase perfecto al compañero! (+100 Pts)');
-      updatePitchPlayersUI(data.ballPosition, 'kick');
+    const isMyTurnWhoAnswered = data.isMyAnswer;
+
+    if (isMyTurnWhoAnswered) {
+      // CASO A: Fui yo quien respondió
+      const btns = document.querySelectorAll('.answer-option-btn');
+      btns.forEach(btn => {
+        const idx = parseInt(btn.dataset.index, 10);
+        btn.disabled = true;
+        if (idx === data.correctAnswer) btn.classList.add('correct');
+        if (idx === data.selectedAnswer && !data.isCorrect) btn.classList.add('wrong');
+      });
+
+      if (data.explanation) {
+        document.getElementById('match-explanation-box').style.display = 'block';
+        document.getElementById('match-explanation-text').textContent = data.explanation;
+      }
+
+      if (data.isCorrect) {
+        window.sounds.playCorrect();
+        window.sounds.playPass();
+        showAnswerFeedback(true, '¡RESPUESTA CORRECTA!', '¡Pase perfecto al compañero! Mantienes la posesión (+100 Pts)');
+        updatePitchPlayersUI(data.ballPosition, 'kick');
+        showPlayAlert('¡Excelente jugada! Como acertaste, sigues jugando tú ⚽🔥', 'turn');
+      } else {
+        window.sounds.playWrong();
+        showAnswerFeedback(false, '¡RESPUESTA INCORRECTA!', 'Perdiste el balón. Ahora es el turno de tu oponente 🛡️');
+        updatePitchPlayersUI(data.ballPosition, 'tackle');
+        showPlayAlert('¡Te equivocaste! El balón pasa a tu contrincante. Prepárate para defender ⚠️', 'warning');
+      }
+
     } else {
-      window.sounds.playWrong();
-      showAnswerFeedback(false, '¡PASE INTERCEPTADO!', 'Revisa la explicación pedagógica');
-      updatePitchPlayersUI(data.ballPosition, 'tackle');
+      // CASO B: Fue mi rival quien respondió (No veo la pregunta ni las respuestas para evitar spoilers)
+      if (data.isCorrect) {
+        window.sounds.playPass();
+        showAnswerFeedback(true, `¡${data.answeredByName || 'Tu rival'} ACERTÓ!`, 'El balón avanza hacia tu arco. ¡Mantén la concentración!');
+        updatePitchPlayersUI(data.ballPosition, 'kick');
+        showPlayAlert(`¡${data.answeredByName || 'Tu rival'} respondió correctamente y continúa su ataque!`, 'warning');
+      } else {
+        window.sounds.playCorrect();
+        showAnswerFeedback(false, `¡${data.answeredByName || 'Tu rival'} FALLÓ!`, '¡Recuperas el balón! Ahora es tu turno de atacar ⚽');
+        updatePitchPlayersUI(data.ballPosition, 'tackle');
+        showPlayAlert(`¡${data.answeredByName || 'Tu rival'} se equivocó! Recuperaste el balón. ¡Es tu turno! ⚡`, 'turn');
+      }
     }
 
+    // Gol marcado
     if (data.goalScoredBy) {
       window.sounds.playGoal();
       updatePitchPlayersUI(data.ballPosition, 'goal');
-      showPlayAlert(`¡¡¡GOOOOOOOLAZO!!! ⚽🔥`, 'goal');
+      const goalScorerName = data.goalScoredBy === 'host' ? state.match.team1.player : state.match.team2.player;
+      showPlayAlert(`¡¡¡GOOOOOOOLAZO DE ${goalScorerName.toUpperCase()}!!! ⚽🔥`, 'goal');
     }
 
+    // Comprobar ganador definitivo
     if (data.matchWinner) {
       setTimeout(() => {
         showFinalResults(data.matchWinner === state.myRole);
       }, 3000);
-      return;
+    }
+  }
+
+  function handleMultiNextTurnReady(data) {
+    // Sincronizar posición del balón
+    if (data.ballPosition !== undefined) {
+      state.match.ballPosition = data.ballPosition;
+      updateBallPositionUI(data.ballPosition);
     }
 
-    setTimeout(() => {
-      renderMultiQuestion(data.nextQuestion, data.nextTurn);
-    }, 2800);
+    renderMultiQuestion(data.question, data.isMyTurn, data.activePlayerName);
   }
 
   // --- 8. RESULTS VIEW ---
