@@ -4404,13 +4404,14 @@ main.app-viewport {
     font-size: 0.8rem;
   }
 
-  /* 1. Pantalla de Bienvenida en Celular */
+  /* 1. Pantalla de Bienvenida en Celular (Elevada y Centrada Ergonómicamente) */
   .view-screen.welcome-fullscreen.active {
     padding: 0;
   }
 
   .welcome-official-stage {
     width: 100vw;
+    height: 100dvh;
     height: 100vh;
     aspect-ratio: auto;
   }
@@ -4419,12 +4420,12 @@ main.app-viewport {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center center;
+    object-position: center 25%;
   }
 
   .welcome-top-brand {
-    top: 14px;
-    left: 14px;
+    top: max(14px, env(safe-area-inset-top));
+    left: 12px;
   }
 
   .welcome-brand-badge {
@@ -4446,8 +4447,8 @@ main.app-viewport {
   }
 
   .welcome-top-controls {
-    top: 14px;
-    right: 14px;
+    top: max(14px, env(safe-area-inset-top));
+    right: 12px;
     gap: 8px;
   }
 
@@ -4457,33 +4458,41 @@ main.app-viewport {
     gap: 5px;
   }
 
+  /* Botones de inicio elevados cómodamente en la pantalla del celular */
   .welcome-bottom-controls {
-    bottom: 24px;
-    width: 92%;
-    gap: 10px;
+    bottom: max(60px, calc(env(safe-area-inset-bottom) + 50px));
+    width: 90%;
+    max-width: 380px;
+    gap: 12px;
   }
 
   .welcome-btn-play {
-    height: 56px;
+    height: 60px;
     max-width: 100%;
+    border-radius: 999px;
+    box-shadow: 
+      0 0 35px rgba(0, 230, 118, 0.9),
+      0 12px 28px rgba(0, 0, 0, 0.9);
   }
 
   .btn-play-label {
-    font-size: 1.65rem;
-    letter-spacing: 2px;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
   }
 
   .btn-play-triangle {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .welcome-sub-buttons-row {
-    gap: 10px;
+    gap: 12px;
+    width: 100%;
   }
 
   .welcome-sub-btn {
-    padding: 8px 12px;
-    font-size: 0.82rem;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    font-weight: 800;
   }
 
   /* 2. Paso 1: Personalización en Celular */
@@ -4895,11 +4904,18 @@ main.app-viewport {
     font-size: 1.35rem;
   }
 
+  .welcome-bottom-controls {
+    bottom: max(65px, calc(env(safe-area-inset-bottom) + 55px));
+    width: 92%;
+    gap: 10px;
+  }
+
   .welcome-btn-play {
-    height: 52px;
+    height: 54px;
   }
 
   .btn-play-label {
-    font-size: 1.45rem;
+    font-size: 1.55rem;
+    letter-spacing: 2.5px;
   }
 }
