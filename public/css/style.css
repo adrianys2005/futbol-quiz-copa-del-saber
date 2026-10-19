@@ -4353,3 +4353,553 @@ main.app-viewport {
   color: #fde047;
   font-weight: 700;
 }
+
+/* ========================================================
+   OPTIMIZACIONES RESPONSIVE COMPLETAS PARA CELULAR (SMARTPHONE)
+   Soporte para iPhone, Android, pantallas estrechas (<= 768px y <= 480px)
+   ======================================================== */
+
+@media (max-width: 768px) {
+  /* Layout general y padding de navegación */
+  body {
+    font-size: 14px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  main.app-viewport {
+    padding: 10px 8px;
+    width: 100%;
+  }
+
+  .game-card {
+    padding: 16px 12px;
+    border-radius: 16px;
+  }
+
+  /* Header Superior en Móvil */
+  .game-header {
+    padding: 8px 12px;
+  }
+
+  .brand-badge {
+    gap: 8px;
+  }
+
+  .brand-icon {
+    font-size: 1.4rem;
+  }
+
+  .brand-text h1 {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+  }
+
+  .brand-text span {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+  }
+
+  .header-controls .btn-icon {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  /* 1. Pantalla de Bienvenida en Celular */
+  .view-screen.welcome-fullscreen.active {
+    padding: 0;
+  }
+
+  .welcome-official-stage {
+    width: 100vw;
+    height: 100vh;
+    aspect-ratio: auto;
+  }
+
+  .welcome-official-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .welcome-top-brand {
+    top: 14px;
+    left: 14px;
+  }
+
+  .welcome-brand-badge {
+    padding: 5px 12px;
+    gap: 8px;
+  }
+
+  .welcome-brand-ball {
+    font-size: 1.15rem;
+  }
+
+  .welcome-brand-main {
+    font-size: 0.88rem;
+    letter-spacing: 1px;
+  }
+
+  .welcome-brand-sub {
+    font-size: 0.6rem;
+  }
+
+  .welcome-top-controls {
+    top: 14px;
+    right: 14px;
+    gap: 8px;
+  }
+
+  .welcome-top-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    gap: 5px;
+  }
+
+  .welcome-bottom-controls {
+    bottom: 24px;
+    width: 92%;
+    gap: 10px;
+  }
+
+  .welcome-btn-play {
+    height: 56px;
+    max-width: 100%;
+  }
+
+  .btn-play-label {
+    font-size: 1.65rem;
+    letter-spacing: 2px;
+  }
+
+  .btn-play-triangle {
+    font-size: 1.4rem;
+  }
+
+  .welcome-sub-buttons-row {
+    gap: 10px;
+  }
+
+  .welcome-sub-btn {
+    padding: 8px 12px;
+    font-size: 0.82rem;
+  }
+
+  /* 2. Paso 1: Personalización en Celular */
+  .step1-top-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .step1-main-title {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  .step1-main-sub {
+    font-size: 0.82rem;
+  }
+
+  .step1-teams-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .step1-team-card {
+    height: 110px;
+    padding: 8px 4px;
+  }
+
+  .step1-team-card .team-card-crest-box {
+    height: 52px;
+  }
+
+  .step1-team-card .team-card-crest-box .fed-crest-svg {
+    width: 48px;
+    height: 52px;
+  }
+
+  .team-card-name-label {
+    font-size: 0.82rem;
+  }
+
+  .step1-middle-section {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .step1-country-info-card {
+    padding: 12px;
+  }
+
+  .step1-players-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .step1-player-card,
+  .step1-random-player-card {
+    height: 270px;
+  }
+
+  .step1-card-image-wrap {
+    height: 155px;
+  }
+
+  .step1-card-player-photo {
+    height: 150px;
+  }
+
+  .step1-card-player-name {
+    font-size: 0.88rem;
+  }
+
+  .step1-action-bar {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .step1-action-bar button,
+  .step1-action-bar .step1-status-pill {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* 3. Paso 2: Selección de Grado en Celular */
+  .fut-category-title {
+    font-size: 1.7rem;
+  }
+
+  .fut-category-sub {
+    font-size: 0.88rem;
+  }
+
+  .fut-official-gold-banner {
+    padding: 8px 14px;
+    font-size: 0.78rem;
+    border-radius: 12px;
+  }
+
+  .fut-grades-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .fut-grade-card {
+    height: 310px;
+    padding: 10px 8px;
+  }
+
+  .card-role-badge {
+    font-size: 0.65rem;
+    padding: 2px 8px;
+  }
+
+  .card-grade-num {
+    font-size: 2.2rem;
+  }
+
+  .card-silhouette-wrap {
+    height: 80px;
+  }
+
+  .card-stats-box {
+    font-size: 0.65rem;
+  }
+
+  /* 4. Pantalla de Partido (Match & Cancha) en Celular */
+  .scoreboard {
+    padding: 10px 12px;
+    margin-bottom: 12px;
+  }
+
+  .team-score-item {
+    gap: 8px;
+  }
+
+  .team-score-item .team-meta h3 {
+    font-size: 0.85rem;
+  }
+
+  .team-score-item .team-meta span {
+    font-size: 0.68rem;
+  }
+
+  .team-score-item .score-digit {
+    font-size: 1.6rem;
+    padding: 2px 10px;
+  }
+
+  .match-clock-center {
+    padding: 0 8px;
+  }
+
+  .clock-timer {
+    font-size: 1.1rem;
+  }
+
+  .possession-badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+  }
+
+  /* Cancha de Fútbol Optimizada para Pantallas Táctiles */
+  .pitch-container {
+    height: 290px;
+    margin-bottom: 14px;
+    border-width: 3px;
+    border-radius: 14px;
+  }
+
+  .stadium-crowd-layer {
+    height: 28px;
+  }
+
+  .crowd-spectators {
+    font-size: 0.75rem;
+    gap: 4px;
+  }
+
+  .pitch-center-line {
+    top: 28px;
+  }
+
+  .pitch-center-circle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .pitch-goal-3d-left,
+  .pitch-goal-3d-right {
+    height: 80px;
+    top: calc(50% - 40px + 10px);
+    width: 16px;
+  }
+
+  .pitch-goal-area-left,
+  .pitch-goal-area-right {
+    width: 65px;
+    height: 110px;
+    top: calc(50% - 55px + 10px);
+  }
+
+  .pitch-penalty-arc-left,
+  .pitch-penalty-arc-right {
+    display: none; /* Simplificar en pantalla móvil */
+  }
+
+  /* Fichas de Jugadores en Móvil: Adaptadas sin perder proporción */
+  .player-token {
+    width: 36px;
+    height: 36px;
+    border-width: 2px;
+  }
+
+  .flag-disk-svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .player-jersey-number {
+    font-size: 0.52rem;
+    padding: 0 3px;
+    bottom: -3px;
+    right: -3px;
+  }
+
+  .player-name-tag {
+    font-size: 0.5rem;
+    padding: 1px 4px;
+    max-width: 62px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .football-ball {
+    width: 28px;
+    height: 28px;
+    font-size: 1.55rem;
+  }
+
+  /* Tarjeta de Pregunta en Móvil */
+  .question-card {
+    padding: 14px 12px;
+    border-radius: 16px;
+  }
+
+  .question-meta-bar {
+    gap: 6px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+  }
+
+  .badge-tag {
+    font-size: 0.68rem;
+    padding: 3px 7px;
+  }
+
+  .question-timer {
+    font-size: 0.95rem;
+    padding: 3px 8px;
+  }
+
+  .question-body {
+    font-size: 0.98rem;
+    line-height: 1.45;
+    margin-bottom: 14px;
+  }
+
+  /* Opciones de Respuesta en Móvil: 1 sola columna fácil de tocar con el pulgar */
+  .answers-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .answer-option-btn {
+    padding: 12px 14px;
+    font-size: 0.92rem;
+    min-height: 52px;
+    border-radius: 12px;
+  }
+
+  .answer-letter {
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+
+  /* Caja de Espera por Turno de Rival en Móvil */
+  .rival-waiting-container {
+    padding: 20px 12px;
+  }
+
+  .rival-waiting-radar {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .radar-ball {
+    font-size: 1.8rem;
+  }
+
+  .rival-waiting-title {
+    font-size: 1.15rem;
+  }
+
+  .rival-waiting-desc {
+    font-size: 0.85rem;
+  }
+
+  /* Popups y Diálogos de Feedback en Móvil */
+  .answer-feedback-popup {
+    padding: 18px 22px;
+    width: 95%;
+  }
+
+  .feedback-ball-icon {
+    font-size: 3.2rem;
+  }
+
+  .feedback-headline {
+    font-size: 1.25rem;
+  }
+
+  .feedback-sub {
+    font-size: 0.88rem;
+  }
+
+  /* Sala Multijugador (Lobby) en Móvil */
+  .room-tabs {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .room-tab {
+    padding: 8px 12px;
+    font-size: 0.88rem;
+  }
+
+  .room-code-display {
+    font-size: 2.1rem;
+    letter-spacing: 4px;
+  }
+
+  .players-vs-container {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .vs-divider {
+    transform: rotate(90deg);
+    margin: 4px 0;
+  }
+
+  .fut-nav-actions {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .fut-nav-actions button,
+  .btn-neon-pill,
+  .btn-dark-beveled {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 0.98rem;
+    justify-content: center;
+  }
+}
+
+/* Pantallas Extra Pequeñas (Celulares compactos <= 440px) */
+@media (max-width: 440px) {
+  .step1-teams-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fut-grades-container {
+    grid-template-columns: 1fr;
+  }
+
+  .fut-grade-card {
+    height: auto;
+    min-height: 220px;
+    padding: 14px;
+  }
+
+  .pitch-container {
+    height: 250px;
+  }
+
+  .player-token {
+    width: 32px;
+    height: 32px;
+  }
+
+  .flag-disk-svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .player-name-tag {
+    display: none; /* Ocultar etiquetas de nombre para no saturar la canchita en celulares angostos */
+  }
+
+  .football-ball {
+    width: 24px;
+    height: 24px;
+    font-size: 1.35rem;
+  }
+
+  .welcome-btn-play {
+    height: 52px;
+  }
+
+  .btn-play-label {
+    font-size: 1.45rem;
+  }
+}
