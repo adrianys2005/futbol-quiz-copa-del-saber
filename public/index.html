@@ -188,12 +188,41 @@
         <div class="fut-official-gold-banner">
           <span class="banner-icon-trophy">🏆</span>
           <div class="banner-text">
-            <strong>Cuadernillos Oficiales:</strong> Preguntas de práctica Saber ICFES disponibles para 6.º, 7.º, 8.º, 9.º, 10.º y 11.º en todas las asignaturas.
+            <strong>Cuadernillos Oficiales:</strong> Preguntas de práctica Saber ICFES disponibles para 5.º, 6.º, 7.º, 8.º, 9.º, 10.º y 11.º en todas las asignaturas.
           </div>
         </div>
 
-        <!-- 6 Tarjetas FUT de Categorías / Grados -->
+        <!-- 7 Tarjetas FUT de Categorías / Grados -->
         <div class="fut-grades-container" id="grade-grid-container">
+          <!-- 5.º Grado - Canterano (Verde Esmeralda / Neón) -->
+          <div class="fut-grade-card card-emerald grade-btn" data-grade="5">
+            <div class="card-role-badge">🌱 CANTERANO</div>
+            <div class="card-grade-num">5.º</div>
+            <div class="card-grade-label">GRADO</div>
+            <div class="card-silhouette-wrap">
+              <svg viewBox="0 0 100 80" class="grade-silhouette-svg">
+                <!-- Canterano ágil controlando el balón con el pie -->
+                <g fill="currentColor">
+                  <circle cx="50" cy="9" r="6"/>
+                  <path d="M42,20 C39,24 37,32 35,40 C39,42 45,43 50,43 C55,43 61,42 65,40 C63,32 61,24 58,20 C55,17 52,16 50,16 C48,16 45,17 42,20 Z"/>
+                  <path d="M38,42 C35,50 31,59 28,67 C32,69 36,68 39,63 C41,56 43,49 45,43 Z"/>
+                  <path d="M62,42 C65,50 69,59 72,67 C68,69 64,68 61,63 C59,56 57,49 55,43 Z"/>
+                  <!-- Balón oficial al pie -->
+                  <circle cx="78" cy="67" r="5.5" fill="#34d399"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card-state-pill extra-time-pill" title="Mayor tiempo de respuesta">⏱️ +TIEMPO</div>
+            <div class="card-stats-box">
+              <div class="stat-line"><span>🧠 CONOCIMIENTO</span> <strong>68</strong></div>
+              <div class="stat-line"><span>⚡ TÉCNICA</span> <strong>66</strong></div>
+              <div class="stat-line"><span>🎯 PRECISIÓN</span> <strong>70</strong></div>
+            </div>
+            <div class="card-bottom-icon">
+              <div class="active-pill-badge">⭐ JUGAR</div>
+            </div>
+          </div>
+
           <!-- 6.º Grado - Portero (Cyan) -->
           <div class="fut-grade-card card-cyan grade-btn" data-grade="6">
             <div class="card-role-badge">🧤 PORTERO</div>
@@ -679,6 +708,19 @@
             </div>
 
             <button class="btn-secondary" id="btn-copy-room-link">📋 Copiar Código y Enlace</button>
+
+            <!-- Guía de conexión para compañeros en la misma red -->
+            <div class="network-invite-box" id="network-invite-box" style="margin-top: 16px; padding: 14px 16px; background: rgba(0, 230, 118, 0.08); border: 1.5px solid rgba(0, 230, 118, 0.35); border-radius: 14px; text-align: center;">
+              <div style="color: #6ee7b7; font-weight: 800; font-size: 0.95rem; margin-bottom: 6px; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                <span>📶</span> ¿Cómo se conecta tu compañero en línea?
+              </div>
+              <div style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.5;">
+                Ambos deben estar en el mismo <strong>Wi-Fi</strong> o red.<br>
+                Tu compañero abre en su celular, tablet o PC este enlace:<br>
+                <a id="lobby-network-url" href="#" target="_blank" style="color: #fde047; font-weight: 800; font-size: 1.05rem; text-decoration: underline; word-break: break-all; display: inline-block; margin: 4px 0;">http://localhost:3000</a><br>
+                Luego entra a <strong>"Unirse a Sala"</strong> y escribe el código de arriba.
+              </div>
+            </div>
           </div>
 
           <!-- Panel Unirse a Sala -->
@@ -720,7 +762,7 @@
         <!-- Barra Superior: Progreso de 7 Pases, Pausa (Solo Offline) y Cancelar -->
         <div class="match-top-controls">
           <div class="match-level-badge">
-            <span class="match-badge-trophy">🏆</span> Copa del Saber - 11.º Grado
+            <span class="match-badge-trophy">🏆</span> <span id="match-header-grade-title">Copa del Saber - 11.º Grado</span>
             <span class="match-phase-pill" id="match-phase-indicator">⚡ Pase 1 de 7 Rumbo al Gol</span>
           </div>
           <div class="match-controls-actions">
@@ -951,7 +993,7 @@
         </div>
 
         <h3>🎯 Propósito Educativo</h3>
-        <p>Videojuego web interactivo desarrollado para transformar la preparación de las <strong>Pruebas Saber ICFES</strong> (Grados 6.º, 7.º, 8.º, 9.º, 10.º y 11.º) en una emocionante competencia deportiva que incentiva el pensamiento crítico, la resolución de problemas y la agilidad mental mediante la pasión del fútbol.</p>
+        <p>Videojuego web interactivo desarrollado para transformar la preparación de las <strong>Pruebas Saber ICFES</strong> (Grados 5.º, 6.º, 7.º, 8.º, 9.º, 10.º y 11.º) en una emocionante competencia deportiva que incentiva el pensamiento crítico, la resolución de problemas y la agilidad mental mediante la pasión del fútbol.</p>
 
         <h3>📚 Áreas Académicas Integradas</h3>
         <ul>

@@ -19,6 +19,7 @@
     isMultiplayer: false,
     myRole: 'p1', // 'host' (p1) or 'guest' (p2)
     roomCode: null,
+    networkInfo: null,
 
     // Match variables
     match: {
@@ -92,6 +93,7 @@
     setupMultiplayerLobby();
     setupMatchView();
     setupResultsView();
+    fetchNetworkInfo();
 
     // Check if URL has ?room=ABC123
     const urlParams = new URLSearchParams(window.location.search);
@@ -511,8 +513,14 @@
     gradeCards.forEach(card => {
       card.addEventListener('click', () => {
         const grade = card.dataset.grade || '11';
-        gradeCards.forEach(c => c.classList.remove('selected'));
+        gradeCards.forEach(c => {
+          c.classList.remove('selected');
+          const pill = c.querySelector('.active-pill-badge');
+          if (pill) pill.textContent = '⭐ JUGAR';
+        });
         card.classList.add('selected');
+        const activePill = card.querySelector('.active-pill-badge');
+        if (activePill) activePill.textContent = '⭐ ACTIVO';
         state.selectedGrade = grade;
         window.sounds.playKick();
       });
@@ -643,6 +651,20 @@
   }
 
   // --- 6. MULTIPLAYER ONLINE LOBBY (SOCKET.IO) ---
+  function fetchNetworkInfo() {
+    fetch('/api/network-info')
+      .then(res => res.json())
+      .then(info => {
+        state.networkInfo = info;
+        const linkEl = document.getElementById('lobby-network-url');
+        if (linkEl && info.localUrl) {
+          linkEl.textContent = info.localUrl;
+          linkEl.href = info.localUrl;
+        }
+      })
+      .catch(() => {});
+  }
+
   function initSocket() {
     if (!state.socket && typeof io !== 'undefined') {
       state.socket = io();
@@ -652,8 +674,11 @@
         state.myRole = 'host';
         document.getElementById('display-room-code').textContent = data.roomCode;
         
-        // Render QR
-        const roomUrl = `${window.location.origin}${window.location.pathname}?room=${data.roomCode}`;
+        // Render QR con la IP de red local para que teléfonos y tablets en el mismo Wi-Fi se unan al instante
+        const baseUrl = (state.networkInfo && state.networkInfo.localUrl && !state.networkInfo.localUrl.includes('localhost'))
+          ? state.networkInfo.localUrl
+          : `${window.location.origin}${window.location.pathname}`.replace(/\/+$/, '');
+        const roomUrl = `${baseUrl}?room=${data.roomCode}`;
         window.generateQRCode('qrcode-box', roomUrl, 180);
 
         // Update lobby UI
@@ -720,9 +745,12 @@
 
     document.getElementById('btn-copy-room-link').addEventListener('click', () => {
       if (!state.roomCode) return;
-      const roomUrl = `${window.location.origin}${window.location.pathname}?room=${state.roomCode}`;
+      const baseUrl = (state.networkInfo && state.networkInfo.localUrl && !state.networkInfo.localUrl.includes('localhost'))
+        ? state.networkInfo.localUrl
+        : `${window.location.origin}${window.location.pathname}`.replace(/\/+$/, '');
+      const roomUrl = `${baseUrl}?room=${state.roomCode}`;
       navigator.clipboard.writeText(`¡Juega conmigo a Fútbol Quiz! Código: ${state.roomCode} o entra en: ${roomUrl}`).then(() => {
-        alert('¡Código y enlace de la sala copiados al portapapeles!');
+        alert(`¡Código [${state.roomCode}] y enlace Wi-Fi copiados al portapapeles!\nPásaselo a tu compañero.`);
       });
     });
 
@@ -748,8 +776,23 @@
 
   function openMultiplayerLobby() {
     initSocket();
+    fetchNetworkInfo();
     switchView('multiLobby');
-    createRoomOnServer();
+    const joinCodeInput = document.getElementById('input-join-code');
+    if (joinCodeInput && joinCodeInput.value.trim().length >= 4) {
+      const tabJoin = document.getElementById('tab-join-room');
+      const tabCreate = document.getElementById('tab-create-room');
+      const panelCreate = document.getElementById('panel-create-room');
+      const panelJoin = document.getElementById('panel-join-room');
+      if (tabJoin && tabCreate && panelCreate && panelJoin) {
+        tabJoin.classList.add('active');
+        tabCreate.classList.remove('active');
+        panelCreate.style.display = 'none';
+        panelJoin.style.display = 'block';
+      }
+    } else {
+      createRoomOnServer();
+    }
   }
 
   function getMyPlayerData() {
@@ -1315,6 +1358,10 @@
 
     // Lanzar Entrada Cinemática con Logo de Fútbol Quiz
     showMatchIntro(team1Data, team2Data, () => {
+      const headerTitle = document.getElementById('match-header-grade-title');
+      if (headerTitle) {
+        headerTitle.textContent = `Copa del Saber - ${state.selectedGrade}.º Grado`;
+      }
       updateScoreboardUI();
       renderPitchPlayers();
       updateBallPositionUI(0);
@@ -1366,35 +1413,45 @@
     text.textContent = msg;
   }
 
-  // Cálculo dinámico del tiempo según la dificultad y complejidad de la pregunta
+  // Cálculo dinámico del tiempo según la dificultad, longitud y grado del estudiante
   function getQuestionTimeLimit(q) {
-    if (!q) return 60;
-    if (typeof q.tiempoLimite === 'number') return q.tiempoLimite;
+    if (!q) return 100;
+    const isGrade5 = String(q.grado) === '5';
+
+    if (typeof q.tiempoLimite === 'number') {
+      return isGrade5 ? Math.max(q.tiempoLimite, 120) : Math.max(q.tiempoLimite, 90);
+    }
 
     const diff = (q.dificultad || '').toLowerCase();
-    let baseTime = 60; // Normal / Medio
+    let baseTime = 115; // Normal / Medio: casi 2 minutos (115s)
 
     if (diff.includes('difícil') || diff.includes('dificil') || diff.includes('avanzad')) {
-      baseTime = 95; // Pregunta difícil: tiempo necesario para pensar y resolver (1m 35s)
+      baseTime = 145; // Pregunta difícil: 2m 25s
     } else if (diff.includes('fácil') || diff.includes('facil')) {
-      baseTime = 45; // Pregunta fácil: ágil pero holgado (45s)
+      baseTime = 90; // Pregunta fácil: 1m 30s
     } else {
-      baseTime = 65; // Pregunta normal: equilibrada (1m 05s)
+      baseTime = 115; // Pregunta normal: casi 2m
     }
 
-    // Bonificación si el enunciado es extenso o requiere cálculos matemáticos
+    // Bonificación si el enunciado es extenso o requiere lectura de textos
     const textLen = (q.pregunta || '').length;
     if (textLen > 220) {
-      baseTime += 15;
+      baseTime += 20;
     } else if (textLen > 140) {
-      baseTime += 10;
+      baseTime += 15;
     }
 
-    if (q.asignatura === 'Matemáticas' && baseTime < 80 && (diff.includes('medio') || diff.includes('dif'))) {
-      baseTime = Math.max(baseTime, 85);
+    if (q.asignatura === 'Matemáticas' && baseTime < 130 && (diff.includes('medio') || diff.includes('dif'))) {
+      baseTime = Math.max(baseTime, 140);
     }
 
-    return Math.min(120, Math.max(40, baseTime));
+    // Mayor tiempo de respuesta especial para 5.° Grado (primaria)
+    if (isGrade5) {
+      baseTime += 35; // +35s adicionales
+      baseTime = Math.max(baseTime, 120); // Mínimo 2 minutos (120s) para 5°
+    }
+
+    return Math.min(180, Math.max(75, baseTime));
   }
 
   function loadNextSoloQuestion() {
@@ -1436,10 +1493,10 @@
     startQuestionTimer(timeForQ);
   }
 
-  // Temporizador dinámico con soporte de pausa
+  // Temporizador dinámico con formato deportivo (M:SS) y soporte de pausa
   function startQuestionTimer(customSec) {
     clearInterval(state.match.timerId);
-    const maxSec = (typeof customSec === 'number') ? customSec : (state.match.timerSec || 60);
+    const maxSec = (typeof customSec === 'number') ? customSec : (state.match.timerSec || 90);
     state.match.timerSec = maxSec;
     let timeLeft = maxSec;
     state.match.timeLeft = timeLeft;
@@ -1447,8 +1504,17 @@
     const badgeTime = document.getElementById('badge-question-time');
     const timerBar = document.getElementById('match-timer-bar');
 
-    timeDisplay.textContent = `${timeLeft}s`;
-    badgeTime.textContent = `⏱️ ${timeLeft}s`;
+    const formatTimer = (sec) => {
+      if (sec >= 60) {
+        const m = Math.floor(sec / 60);
+        const s = (sec % 60).toString().padStart(2, '0');
+        return `${m}:${s}`;
+      }
+      return `${sec}s`;
+    };
+
+    timeDisplay.textContent = formatTimer(timeLeft);
+    badgeTime.textContent = `⏱️ ${formatTimer(timeLeft)}`;
     if (timerBar) {
       timerBar.style.width = '100%';
       timerBar.className = 'timer-progress-bar';
@@ -1458,15 +1524,15 @@
       if (state.match.isPaused) return;
       timeLeft--;
       state.match.timeLeft = timeLeft;
-      timeDisplay.textContent = `${timeLeft}s`;
-      badgeTime.textContent = `⏱️ ${timeLeft}s`;
+      timeDisplay.textContent = formatTimer(timeLeft);
+      badgeTime.textContent = `⏱️ ${formatTimer(timeLeft)}`;
 
       if (timerBar) {
         const pct = Math.max(0, (timeLeft / state.match.timerSec) * 100);
         timerBar.style.width = `${pct}%`;
-        if (timeLeft <= 15) {
+        if (timeLeft <= 20) {
           timerBar.className = 'timer-progress-bar danger';
-        } else if (timeLeft <= 30) {
+        } else if (timeLeft <= 45) {
           timerBar.className = 'timer-progress-bar warning';
         } else {
           timerBar.className = 'timer-progress-bar';

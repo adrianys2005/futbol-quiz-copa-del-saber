@@ -118,9 +118,32 @@ function getFilteredQuestions(grado, asignatura) {
   return gradeMatches.length > 0 ? gradeMatches : all;
 }
 
+// Helper to detect local network IPv4 address for LAN multiplayer
+function getLocalIpAddress() {
+  const os = require('os');
+  const ifaces = os.networkInterfaces();
+  for (const dev in ifaces) {
+    for (const details of ifaces[dev]) {
+      if (details.family === 'IPv4' && !details.internal && !details.address.startsWith('169.254')) {
+        return details.address;
+      }
+    }
+  }
+  return 'localhost';
+}
+
 // REST API
 app.get('/api/teams', (req, res) => {
   res.json(loadJSON(teamsPath));
+});
+
+app.get('/api/network-info', (req, res) => {
+  const localIp = getLocalIpAddress();
+  res.json({
+    localIp,
+    port: PORT,
+    localUrl: `http://${localIp}:${PORT}`
+  });
 });
 
 app.get('/api/questions', (req, res) => {
@@ -280,26 +303,37 @@ io.on('connection', (socket) => {
   }
 
   function getQuestionTimeLimit(q) {
-    if (!q) return 60;
+    if (!q) return 100;
+    const isGrade5 = String(q.grado) === '5';
+    if (typeof q.tiempoLimite === 'number') {
+      return isGrade5 ? Math.max(q.tiempoLimite, 120) : Math.max(q.tiempoLimite, 90);
+    }
+
     const diff = (q.dificultad || '').toLowerCase();
-    let baseTime = 60;
+    let baseTime = 115; // 1m 55s
 
     if (diff.includes('difícil') || diff.includes('dificil') || diff.includes('avanzad')) {
-      baseTime = 90; // 90s para preguntas difíciles
+      baseTime = 145; // 2m 25s para preguntas difíciles
     } else if (diff.includes('fácil') || diff.includes('facil')) {
-      baseTime = 45; // 45s para preguntas fáciles
+      baseTime = 90; // 1m 30s para preguntas fáciles
     } else {
-      baseTime = 65; // 65s para preguntas normales
+      baseTime = 115; // Normal
     }
 
     const textLen = (q.pregunta || '').length;
     if (textLen > 200) {
-      baseTime += 15;
+      baseTime += 20;
     } else if (textLen > 130) {
-      baseTime += 10;
+      baseTime += 15;
     }
 
-    return Math.min(120, Math.max(40, baseTime));
+    // Mayor tiempo de respuesta especial para 5.° Grado en multijugador
+    if (isGrade5) {
+      baseTime += 35; // +35s adicionales
+      baseTime = Math.max(baseTime, 120); // Mínimo 2 minutos (120s)
+    }
+
+    return Math.min(180, Math.max(75, baseTime));
   }
 
   function getSanitizedQuestion(q) {
@@ -465,5 +499,8 @@ io.on('connection', (socket) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`⚽ Servidor de Fútbol Quiz ejecutándose en http://localhost:${PORT}`);
+  const localIp = getLocalIpAddress();
+  console.log(`⚽ Servidor de Fútbol Quiz ejecutándose exitosamente:`);
+  console.log(`   🏠 Tu PC (Local):     http://localhost:${PORT}`);
+  console.log(`   📶 En tu Red Wi-Fi:    http://${localIp}:${PORT} (Comparte este enlace con tus compañeros)`);
 });
